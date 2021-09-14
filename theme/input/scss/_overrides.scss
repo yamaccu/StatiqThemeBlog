@@ -1,0 +1,57 @@
+/* カスタマイズ */
+
+.col-md-6 {
+    flex: 0 0 auto; max-width: 100%;
+}
+
+.col-md-12 {
+	 flex: 0 0 100%; max-width: 100%; 
+}
+
+h2{
+    background-color: whitesmoke;
+    padding:10px;
+}
+
+table th,table td{
+    border-collapse: separate;
+    border:solid 1px gainsboro;
+    padding:4px;
+}
+table th{
+    color:white;
+    background-color: darkseagreen;
+}
+table tr:nth-child(odd) td {
+	background: snow;
+}
+
+.link{
+    display: inline-block;
+    position:relative;
+    height:20px;
+    width:20px;
+    top:5px;
+    border:solid 2px gray;
+    margin-left:10px;
+  }
+    .link:after{
+        content:'';
+        position:absolute;
+        height:14px;
+        width:2px;
+        background-color:gray;
+        left:8px;
+        transform:rotate(45deg);
+    }
+    .link:before{
+        content:'';
+        position:absolute;
+        height:0px;
+        width:0px;
+        border-left: 13px solid white;
+        border-top: 13px solid gray;
+        top:-5px;  
+        left:7px;
+    }
+  
