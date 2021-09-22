@@ -26,7 +26,19 @@ pre[class*="language-"] {
 	-moz-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
+
 }
+
+@media only screen and (max-width: 930px) {
+	pre[class*="language-"],code[class*="language-"]{
+		max-width: 540px;
+	}
+}
+
+
+
+
+
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {

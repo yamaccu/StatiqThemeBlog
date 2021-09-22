@@ -74,7 +74,6 @@
 
   @RenderSection("Head", false)
 
-　<!-- 記事のみにAdsense適用、URLの長さで判別している -->
   @if(Document.GetLink(true).Length > 48)
   {
     <script data-ad-client="ca-pub-2127299793131419" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
