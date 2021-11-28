@@ -1,0 +1,19 @@
+ArchiveSources: posts/*
+ArchiveKey: tag
+layout: _posts_layout.cshtml
+ShouldOutput: false
+IncludeInSitemap: false
+---
+
+@if (Document.ContainsKey(Keys.GroupKey))
+{
+  <div>
+    group key
+  </div>
+}
+else
+{
+  <div>
+    no group key
+  </div>
+}

@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>@Document.GetString("Title") | @Context.GetString("SiteTitle")</title>
+
+    <link href="@Context.GetLink("/scss/tils.css")" rel="stylesheet" type="text/css">
+    <link href="@Context.GetLink("/scss/prism.css")" rel="stylesheet" type="text/css">
+    <script src="@Context.GetLink("/js/jquery-3.6.0.min.js")"></script>
+    <script src="@(Context.GetLink("/js/tils.js"))"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.19.0/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.19.0/plugins/autoloader/prism-autoloader.min.js" data-no-mirror></script>
+
+    
+    <link rel="shortcut icon" href="@Context.GetLink("/favicon.ico")" type="image/x-icon">
+    <link rel="icon" href="@Context.GetLink("/favicon.ico")" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+
+    <script data-ad-client="ca-pub-2127299793131419" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-197465108-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-197465108-1');
+    </script>
+  </head>
+
+  <body>
+    <header style="background-image:url('@Context.GetLink("/img/main2.png")'); position:fixed; top:0; left:0; right:0; z-index: 50;">
+      @{
+        IDocument document_tils = Outputs.Get("tils.html");
+        IDocument document_index = Outputs.Get("index.html");
+      }
+      <div class="flex-wrap">
+        <div class="menu"></div>
+        <div>
+          <a href="@Context.GetLink(document_tils)" class="title">TIL</a>
+        </div>
+        <div class="ext-link">
+          <a href="@Context.GetLink(document_index)"><img src="@(Context.GetLink("/img/home.png"))" class="ext-link-icon"></a>&nbsp;&nbsp;
+          <a href="https://twitter.com/YY87750722"><img src="@(Context.GetLink("/img/twitter.png"))" class="ext-link-icon"></a>&nbsp;&nbsp;
+          <a href="https://github.com/yamaccu"><img src="@(Context.GetLink("/img/github.png"))" class="ext-link-icon"></a>
+        </div>
+      </div>
+      <br>
+    </header>
+    <br>
+    <div class="flex-nowrap, body-font">
+      <div id="sidemenu" class="side-layout load">
+        @foreach (IDocument document in Outputs.Get("tils_archive.html").GetChildren())
+        {
+          <details>
+            <summary class="side-summary">@document.GetTitle()</summary>
+            @foreach (IDocument tags in document.GetChildren())
+            {
+              <div class="side-content">
+                - 
+                <a href="@Context.GetLink(tags)">@tags.GetTitle()</a><br>
+              </div>
+            }
+          </details>
+        }
+        <br>
+      </div>
+
+      <div class="main-content">
+
+        @if(Document.Destination != "tils.html")
+        {
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2127299793131419"
+            crossorigin="anonymous"></script>
+          <!-- head -->
+          <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-2127299793131419"
+            data-ad-slot="2560895837"
+            data-ad-format="horizontal"
+            data-full-width-responsive="true"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        }
+
+        @RenderBody()
+
+        @if(Document.Destination != "tils.html")
+        {
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2127299793131419"
+          crossorigin="anonymous"></script>
+          <!-- head -->
+          <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-2127299793131419"
+            data-ad-slot="2560895837"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+
+          <h3>コメント<span class="comment">（githubのアカウントが必要です）</span></h3>
+
+          <script src="https://utteranc.es/client.js"
+            repo="yamaccu/yamaccu.github.io"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+          </script>
+        }
+      </div>
+    </div>
+  </body>
+</html>
