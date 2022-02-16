@@ -1,0 +1,20 @@
+ArchiveSources: tils/*
+ArchiveKey: tag
+ArchiveOrderKey: tag
+layout: _tils_layout.cshtml
+ShouldOutput: false
+IncludeInSitemap: false
+---
+
+@if (Document.ContainsKey(Keys.GroupKey))
+{
+  <div>
+    <!-- Render a group page -->
+  </div>
+}
+else
+{
+  <div>
+    <!-- Render an index page -->
+  </div>
+}

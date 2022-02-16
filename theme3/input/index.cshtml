@@ -1,0 +1,109 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>@Document.GetString("SiteTitle")</title>
+
+  <link href="@Context.GetLink("/scss/main.css")" rel="stylesheet" type="text/css">
+
+  <link rel="shortcut icon" href="@Context.GetLink("/favicon.ico")" type="image/x-icon">
+  <link rel="icon" href="@Context.GetLink("/favicon.ico")" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@900&display=swap" rel="stylesheet">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-197465108-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-197465108-1');
+  </script>
+
+  <meta property="og:title" content="yokuaru Tech notes" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="フツーのエンジニアの技術ブログ">
+  <meta property="og:url" content="@Document.GetLink(true)" />
+  <meta property="og:image" content="@Document.GetLink(true)img/main_about.png">
+  <meta property="og:site_name" content="@Context.GetString("SiteTitle")" />
+  <meta property="og:locale" content="ja_JP" />
+</head>
+
+<header style="background-image:url('@Context.GetLink("/img/main2.png")')">
+  @{
+    IDocument document_index = Outputs.Get("index.html");
+    IDocument document_tils = Outputs.Get("tils.html");
+    IDocument document_about = Outputs.Get("about.html");
+    IDocument document_posts = Outputs.Get("posts.html");
+  }
+  <div class="header">
+    <br>
+    <a href="@Context.GetLink(document_index)" class="title">
+      yokuaru Tech notes
+    </a>
+    <br>
+    <p>フツーのエンジニアの技術ブログです</p>
+  </div>
+  <div class="ext-link">
+    <a href="@Context.GetLink(document_index)"><img src="@(Context.GetLink("/img/home.png"))" class="ext-link-icon"
+        alt="homeへのリンク"></a>&nbsp;&nbsp;
+    <a href="https://twitter.com/YY87750722"><img src="@(Context.GetLink("/img/twitter.png"))" class="ext-link-icon"
+        alt="twitterへのリンク"></a>&nbsp;&nbsp;
+    <a href="https://github.com/yamaccu"><img src="@(Context.GetLink("/img/github.png"))" class="ext-link-icon"
+        alt="githubへのリンク"></a>
+  </div>
+</header>
+
+<body class="body-font">
+  <br>
+  <br>
+
+  <div>
+    <h1><img src="/img/star4.png" class="image-star" alt="">CONTENTS<img src="/img/star4.png" class="image-star"></h1>
+    <div class="flex-wrap-center">
+      <div class="contents-menu" style="background-image:url('@Context.GetLink("/img/main_blog.png")');">
+        <a class="contents-font">TECH BLOG</a>
+        <a href="@Context.GetLink(document_posts)" class="contents-link"></a>
+      </div>
+      <div class="contents-menu" style=" background-image:url('@Context.GetLink("/img/main_til.png")');">
+        <a class="contents-font">TIL (Today I Learned)</a>
+        <a href="@Context.GetLink(document_tils)" class="contents-link"></a>
+      </div>
+      <div class="contents-menu" style="background-image:url('@Context.GetLink("/img/main_about.png")');">
+        <a class="contents-font">ABOUT</a>
+        <a href="@Context.GetLink(document_about)" class="contents-link"></a>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+<!--
+  <div>
+  <h1><img src="/img/star4.png" class="image-star" alt="">SOCIAL<img src="/img/star4.png" class="image-star"></h1>
+  <div class="flex-wrap-center">
+    <div class="contents-menu" style="background-image:url('@Context.GetLink("/img/github2.png")');">
+      <a class="contents-font">Github</a>
+      <a href="https://github.com/yamaccu" class="contents-link"></a>
+    </div>
+    <div class="contents-menu" style=" background-image:url('@Context.GetLink("/img/qiita.png")');">
+      <a class="contents-font">Qiita</a>
+      <a href="https://qiita.com/yamaccu" class="contents-link"></a>
+    </div>
+    <div class="contents-menu" style=" background-image:url('@Context.GetLink("/img/twitter2.png")');">
+      <a class="contents-font">Twitter</a>
+      <a href="https://twitter.com/YY87750722" class="contents-link"></a>
+    </div>
+
+  </div>
+</div>
+-->
+
+</body>
+
+</html>
