@@ -1,6 +1,5 @@
 title: micropythonにreplでアクセス
 Tag: micropython
-RedirectFrom: posts/20210818-Micropython-repl
 ---
 
 2021/8/18
@@ -30,6 +29,8 @@ CTR+Cを二回で、mainで実行している処理を中止してreplで操作�
 | dir()                   | import済みのファイル情報の表示 |
 | sys.path.append('パス') | import時に探索されるパスを追加 |
 | os.listdir()            |カレントディレクトリのファイルを表示 |
+| os.listdir("パス")      |"パス"内のファイルを表示 |
+| os.chdir("パス")        |"パス"へカレントディレクトリを移動 |
 | tabキー                 | 入力候補の表示 |
 
 <br>

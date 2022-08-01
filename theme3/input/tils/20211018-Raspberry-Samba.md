@@ -1,5 +1,7 @@
 title: RaspberryPiとWindowsでファイル共有(samba)
 tag: RaspberryPi
+Date: 2021/10/17
+description: RaspberryPiに"samba"を入れて、Windows PCとファイル共有します。
 ---
 
 2021/10/17

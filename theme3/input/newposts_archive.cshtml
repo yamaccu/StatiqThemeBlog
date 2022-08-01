@@ -1,0 +1,20 @@
+ArchiveSources: 
+- tech/*
+- tils/*
+ArchiveKey: Date
+ArchiveOrder: => GetDateTime("Date")
+ArchiveOrderDescending: true
+ShouldOutput: false
+IncludeInSitemap: false
+---
+
+@if (Document.ContainsKey(Keys.GroupKey))
+{
+  <div>
+ </div>
+}
+else
+{
+  <div>
+  </div>
+}

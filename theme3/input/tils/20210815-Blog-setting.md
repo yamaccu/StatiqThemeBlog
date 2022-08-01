@@ -1,6 +1,5 @@
 Title: ブログを作ったら最初にやること
 Tag: blog
-RedirectFrom: posts/20210815-Blog-setting
 ---
 
 2021/08/15

@@ -42,7 +42,7 @@ a{
 .post-wrap{
   display: flex;
   flex-wrap: nowrap;
-  
+  justify-content:center;
 }
 
 .link{
@@ -85,8 +85,21 @@ a{
   overflow-x:hidden; 
   overflow-y:auto; 
   margin-left: 50px;
+  flex-grow: 1;
 }
 
+table th,table td{
+  border-collapse: separate;
+  border:solid 1px gainsboro;
+  padding:4px;
+}
+table th{
+  color:white;
+  background-color: darkseagreen;
+}
+table tr:nth-child(odd) td {
+background: snow;
+}
 
 .image-star{
   height:36px;

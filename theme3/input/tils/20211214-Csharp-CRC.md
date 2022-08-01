@@ -1,5 +1,7 @@
 Title: C#でCRCを計算する
 Tag: Csharp
+Date: 2021/12/14
+description: C#でCRC (Cyclic Redundancy Check)の計算をします。
 ---
 
 <br>

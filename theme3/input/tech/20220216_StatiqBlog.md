@@ -1,8 +1,9 @@
-Title: Statiqでブログ作成
+Title: C#製の静的サイトジェネレータ「Statiq」でブログ作成
 Date: 2022/2/16
 tag: statiq
-description: C#製の静的サイトジェネレータ "Statiq" と "github pages" を使ってブログ作成します
-RedirectFrom: posts/20210817-statiq-getstarted
+Image: /img/20220216_statiqblog-index.png
+description: C#製の静的サイトジェネレータ "Statiq" と "github pages" を使ってブログ作成します。
+IndexTitle: Statiqでブログ作成
 ---
 
 <br>
@@ -49,7 +50,7 @@ Statiqはマイナーなのかネットに情報があまりないようです�
 とりあえず、簡単な紹介と導入方法をQiitaに投稿してみました。  
 Statiqのブログテーマを適用してブログを書く方法です。  
 
-[qiita C#製の静的サイトジェネレータ「Statiq」でブログを書く](https://qiita.com/yamaccu/items/6ea0e09954bec8474a19)
+<span class="link"></span>[qiita C#製の静的サイトジェネレータ「Statiq」でブログを書く](https://qiita.com/yamaccu/items/6ea0e09954bec8474a19)
 
 この記事では、サイトにオリジナリティを出すために、ブログテーマを使わないで独自のサイトの作成にチャレンジしていきます。  
 

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width">
   <title>@Document.GetString("title") | @Context.GetString("SiteTitle")</title>
 
-  <link href="@Context.GetLink("/scss/posts.css")" rel="stylesheet" type="text/css">
+  <link href="@Context.GetLink("/scss/tech.css")" rel="stylesheet" type="text/css">
 
   <link rel="shortcut icon" href="@Context.GetLink("/favicon.ico")" type="image/x-icon">
   <link rel="icon" href="@Context.GetLink("/favicon.ico")" type="image/x-icon">
@@ -48,7 +48,7 @@
     else
     {
       IDocument document;
-      document = Outputs.Get("posts.html");
+      document = Outputs.Get("tech.html");
      
       <a href="@Context.GetLink(document)" class="title">
         TECH BLOG

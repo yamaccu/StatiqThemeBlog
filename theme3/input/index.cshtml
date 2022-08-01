@@ -38,7 +38,7 @@
     IDocument document_index = Outputs.Get("index.html");
     IDocument document_tils = Outputs.Get("tils.html");
     IDocument document_about = Outputs.Get("about.html");
-    IDocument document_posts = Outputs.Get("posts.html");
+    IDocument document_tech = Outputs.Get("tech.html");
   }
   <div class="header">
     <br>
@@ -67,7 +67,7 @@
     <div class="flex-wrap-center">
       <div class="contents-menu" style="background-image:url('@Context.GetLink("/img/main_blog.png")');">
         <a class="contents-font">TECH BLOG</a>
-        <a href="@Context.GetLink(document_posts)" class="contents-link"></a>
+        <a href="@Context.GetLink(document_tech)" class="contents-link"></a>
       </div>
       <div class="contents-menu" style=" background-image:url('@Context.GetLink("/img/main_til.png")');">
         <a class="contents-font">TIL (Today I Learned)</a>
@@ -83,26 +83,54 @@
   <br>
   <br>
 
-<!--
   <div>
-  <h1><img src="/img/star4.png" class="image-star" alt="">SOCIAL<img src="/img/star4.png" class="image-star"></h1>
-  <div class="flex-wrap-center">
-    <div class="contents-menu" style="background-image:url('@Context.GetLink("/img/github2.png")');">
-      <a class="contents-font">Github</a>
-      <a href="https://github.com/yamaccu" class="contents-link"></a>
-    </div>
-    <div class="contents-menu" style=" background-image:url('@Context.GetLink("/img/qiita.png")');">
-      <a class="contents-font">Qiita</a>
-      <a href="https://qiita.com/yamaccu" class="contents-link"></a>
-    </div>
-    <div class="contents-menu" style=" background-image:url('@Context.GetLink("/img/twitter2.png")');">
-      <a class="contents-font">Twitter</a>
-      <a href="https://twitter.com/YY87750722" class="contents-link"></a>
-    </div>
-
-  </div>
+  <h1><img src="/img/star4.png" class="image-star" alt="">NEW POSTS<img src="/img/star4.png" class="image-star"></h1>
+    @{
+      int count = 0;
+      foreach(IDocument document in Outputs.Get("newposts_archive.html").GetChildren())
+      {
+        foreach (IDocument posts in document.GetChildren())
+        {
+          <div style="max-width:800px; margin-left:auto; margin-right:auto; border-left:12px solid lightgray;">
+            <a href="@Context.GetLink(posts)">
+              <div style="margin-left:5px;">
+                <p style="color:dimgray; position:relative; margin-top:-1px;"><span style="color:darkgray;">@posts.GetString("Date")</span>
+                <span style="font-weight:bold;">&nbsp;@posts.GetString("Title")</span><br>
+                <span style="margin-left:15px;">@posts.GetString("description")</span></p>
+              </div>
+            </a>
+          </div>
+          <br>
+          count++;
+        }  
+        if(count>4){break;}
+      }
+    }
 </div>
--->
+
+<br>
+<br>
+<br>
+
+<div style="margin-top:10px;text-align:center;">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2127299793131419"
+  crossorigin="anonymous"></script>
+  <!-- head -->
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2127299793131419" data-ad-slot="2560895837"
+  data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  <br>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2127299793131419"
+  crossorigin="anonymous"></script>
+  <!-- head -->
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2127299793131419" data-ad-slot="2560895837"
+  data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
 
 </body>
 

@@ -1,5 +1,7 @@
-title: css display:flexまとめ
-Tag: HTML/CSS
+title: 「CSS」display:flexまとめ
+Date: 2022/2/16
+Tag: HTML/CSS/JS
+description: cssの"display:flex"の用法をまとめました。
 ---
 
 2022/02/16

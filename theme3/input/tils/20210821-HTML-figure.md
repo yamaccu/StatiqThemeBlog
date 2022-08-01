@@ -1,5 +1,5 @@
-title: HTML div要素で図形を表示する
-Tag: HTML/CSS
+title: 「HTML」div要素で図形を表示する
+Tag: HTML/CSS/JS
 RedirectFrom: posts/20210821-HTML-figure
 ---
 

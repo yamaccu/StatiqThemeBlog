@@ -1,6 +1,5 @@
-Title: M5Stack UIFLOWのカスタムブロックを作る
+Title: 「M5Stack」UIFLOWのカスタムブロックを作る
 Tag: M5Stack
-RedirectFrom: posts/20210823-UIFLOW-CustomBlock
 ---
 
 2021/08/23
@@ -22,7 +21,7 @@ LCDが標準装備なのが一番の特徴かと思います。
 ## UIFLOWについて
 
 UIFLOWとは、M5Stackのプログラミング環境の一つで、スクラッチのようにビジュアルプログラミングでM5Stackのコードが書ける優れものです。  
-更にwebベースでプログラミングできるので、プログラム環境の準備がお手軽です。  
+更にwebベースでプログラミングできるので、プログラム環境の準備がいりません。  
 使い方、プログラミングの仕方などは下記のHPを参照ください。
 
 参考1 <span class="link"></span> [公式HP](https://m5stack.github.io/UIFlow_doc/ja/)  
@@ -49,11 +48,34 @@ UIFLOWでは、事前に用意されたブロックを組み合わせてプロ�
 
 ### 1. Pythonでプログラムを書く
 まずはブロック化したい機能のプログラムをpythonで書きます。  
-処理は関数にして呼び出しできるようにしておきます。
+以下のように処理はdefで定義して、関数として呼び出しできるようにしておきます。
+
+```python
+from machine import I2S
+from wav import wave
+
+def playwav(filePath,volume):
+    wav = wave.open(filePath)
+    i2s = I2S(mode=I2S.MODE_MASTER | I2S.MODE_TX | I2S.MODE_DAC_BUILT_IN)
+    i2s.set_dac_mode(i2s.DAC_RIGHT_EN)
+    i2s.sample_rate(wav.getframerate())
+    i2s.bits(wav.getsampwidth() * 8)
+    i2s.nchannels(wav.getnchannels())
+    i2s.volume(volume)
+    while True:
+        data = wav.readframes(256)
+        if len(data) > 0:
+            i2s.write(data)
+        else:
+            wav.close()
+            i2s.deinit()
+            break
+```
 
 ### 2. 初期設定用のブロックを作る
 import、defを行うブロックを作成します。  
 このブロックは最初のsetupで実行するものです。  
+1章で作ったようなプログラムをBlock Code欄へ丸コピします。  
 
 <div style="display:flex;flex-wrap:wrap">
 <div>
