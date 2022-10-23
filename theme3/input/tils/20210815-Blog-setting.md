@@ -47,6 +47,10 @@ HPへの流入ルート、検索順位などSEO関連情報が確認できます
 参考<span class="link"></span> [Google Serach Console登録方法](http://faster-than-the-sol.blogspot.com/2020/10/github-listing.html)
 
 <br>
+
+以上です。
+
+<br>
 <br>
 
 ---

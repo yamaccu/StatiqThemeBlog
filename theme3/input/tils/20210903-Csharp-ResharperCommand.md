@@ -113,5 +113,10 @@ InspectCode.exe YourSolution.sln --output=<FileName>
 
 <br>
 
+以上です。
+
+<br>
+<br>
+
 ---
 

@@ -81,6 +81,10 @@ HPなどのアドレスをコピーした状態で、テキストを選択して
 <img src="../img/20210830-MarkDown-AllInOne-4.png" Style="width:100%;max-width:350px;" alt="MarkDownAllInOneリンク作成">  
 
 <br>
+
+以上です。
+
+<br>
 <br>
 
 ---

@@ -47,7 +47,7 @@ cronとは、Linux系のOSの機能で、時間を指定して繰り返し処理
 <span Class="link"></span> [Qiita cronの設定方法](https://qiita.com/hikouki/items/e744b3a4d356d2af12cf)
 
 ```C#
-crontab -l
+crontab -e
 
 編集画面が開いたら以下を記述
 */5 * * * * /usr/bin/python3  /home/pi/camera.py
@@ -59,12 +59,13 @@ crontab -l
 撮った写真は、Windows PCに取り出したい場合は、ラズパイにSambaというソフトを入れておくと簡単に取り出すことができます。  
 下記に手順をまとめていますのでよろしければ参照ください。  
 
-<span class="link"></span>[RaspberryPi - Windows間でファイル共有](http://localhost:5080/tils/20211018-Raspberry-Samba)
+<span class="link"></span>[RaspberryPi - Windows間でファイル共有](https://yamaccu.github.io/tils/20211018-Raspberry-Samba)
 
 <br>
 
-以上です。  
+以上です。
 
+<br>
 <br>
 
 ---

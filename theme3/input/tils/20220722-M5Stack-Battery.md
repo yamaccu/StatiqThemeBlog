@@ -21,7 +21,7 @@ M5Stackのボトムにはバッテリーが入っています。
 beginで初期化して、getBatteryLevelで残量を取得できます。  
 残量は％表示で、「0, 24, 50, 70, 100」の5値で表されます。  
 
-<spna class="link"></span>[github M5Unified](https://github.com/m5stack/M5Unified)
+<span class="link"></span>[github M5Unified](https://github.com/m5stack/M5Unified)
 
 ```C
 #include <M5Unified.h>
@@ -53,7 +53,10 @@ M5Stackの電源管理は、IP5306というICが使われています。
 
 
 <br>
+
 以上です。
+
+<br>
 <br>
 
 ---

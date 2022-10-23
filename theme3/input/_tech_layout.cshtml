@@ -94,128 +94,130 @@
       <script src="https://utteranc.es/client.js" repo="yamaccu/yamaccu.github.io" issue-term="pathname"
         theme="github-light" crossorigin="anonymous" async>
         </script>
+        <hr>
       }
 
     </div>
-    <div class="adslot_1" style="flex-basis:250px;">
+    <div style="flex-basis:250px;">
       <div style="margin-left:20px;">
 
         <p>Tech Blog Index</p>
-
-        <ul>
 
           @foreach (IDocument document in Outputs.Get("tech_archive.html").GetChildren())
           {
             @foreach (IDocument tags in document.GetChildren())
             {
-              <li style="margin-left:-10px;"><a href="@Context.GetLink(tags)">@tags.GetString("IndexTitle")</a></li>
+              <p style="margin-top:-10px; margin-left:10px;"><span style="font-size:12px;">@tags.GetString("Date")</span><br>
+              &nbsp;&nbsp;・ <a href="@Context.GetLink(tags)">@tags.GetString("IndexTitle")</a></p>
             }
           }
-        </ul>
 
         <br>
 
-        @if(Document.Destination=="tech.html")
-        {
-        <p>Recommended</p>
-        <p><li style="margin-left:22px;">プログラミング</li></p>
+        <div class="adslot_1">
 
-        　　<a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4822286533" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
-        <img src="https://images-fe.ssl-images-amazon.com/images/I/51KYAasOh6L._SL160_.jpg" alt="" style="border: none;" />
-        </a>
-        <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-        <br><br>
+          @if(Document.Destination=="tech.html")
+          {
+          <p>Recommended</p>
+          <p><li style="margin-left:22px;">プログラミング</li></p>
 
-        　　<a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB093Q13V96" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
-          <img src="https://images-fe.ssl-images-amazon.com/images/I/41TNqyMXGCL._SL160_.jpg" alt="" style="border: none;" />
-        </a>
-        <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-        <br><br>
-  
-        　　<a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4798110477" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
-          <img src="https://images-fe.ssl-images-amazon.com/images/I/51YCKF8AGNL._SL160_.jpg" alt="" style="border: none;" />
-        </a>
-        <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-        <br><br>
+          　　<a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4822286533" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
+          <img src="https://images-fe.ssl-images-amazon.com/images/I/51KYAasOh6L._SL160_.jpg" alt="" style="border: none;" />
+          </a>
+          <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+          <br><br>
 
-        <p><li style="margin-left:22px;">プロマネ</li></p>
-        　　<a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4862806430" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
-        <img src="https://images-fe.ssl-images-amazon.com/images/I/51O5nWWBGJL._SL160_.jpg" alt="" style="border: none;" />
-        </a>
-        <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />    
-        <br><br>
+          　　<a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB093Q13V96" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
+            <img src="https://images-fe.ssl-images-amazon.com/images/I/41TNqyMXGCL._SL160_.jpg" alt="" style="border: none;" />
+          </a>
+          <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+          <br><br>
+    
+          　　<a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4798110477" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
+            <img src="https://images-fe.ssl-images-amazon.com/images/I/51YCKF8AGNL._SL160_.jpg" alt="" style="border: none;" />
+          </a>
+          <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+          <br><br>
 
-        　　<a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4872905245" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
-        <img src="https://images-fe.ssl-images-amazon.com/images/I/51X9JOAtTIL._SL160_.jpg" alt="" style="border: none;" />
-        </a>
-        <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-        <br><br>
+          <p><li style="margin-left:22px;">プロマネ</li></p>
+          　　<a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4862806430" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
+          <img src="https://images-fe.ssl-images-amazon.com/images/I/51O5nWWBGJL._SL160_.jpg" alt="" style="border: none;" />
+          </a>
+          <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />    
+          <br><br>
 
-　　        <a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB073TSJ8KL" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
-        <img src="https://images-fe.ssl-images-amazon.com/images/I/41Rlul9NEkL._SL160_.jpg" alt="" style="border: none;" />
-        </a>
-        <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+          　　<a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4872905245" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
+          <img src="https://images-fe.ssl-images-amazon.com/images/I/51X9JOAtTIL._SL160_.jpg" alt="" style="border: none;" />
+          </a>
+          <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+          <br><br>
 
-
-        <p><li style="margin-left:22px;">時間管理</li></p>
-        　　<a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4788907550" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
-        <img src="https://images-fe.ssl-images-amazon.com/images/I/41qglkQH2zL._SL160_.jpg" alt="" style="border: none;" />
-        </a>
-        <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />  
-        <br><br>
-        
-        　　<a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB00BG1CA96" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
-        <img src="https://images-fe.ssl-images-amazon.com/images/I/51ZwmxI9xhL._SL160_.jpg" alt="" style="border: none;" />
-        </a>
-        <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-        <br><br>
-
-        <p><li style="margin-left:22px;">マーケティング</li></p>
-        　　<a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB07P6XKQ14" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
-        <img src="https://images-fe.ssl-images-amazon.com/images/I/51rhY2nttBL._SL160_.jpg" alt="" style="border: none;" />
-        </a>
-        <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-        <br><br>
+  　　        <a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB073TSJ8KL" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
+          <img src="https://images-fe.ssl-images-amazon.com/images/I/41Rlul9NEkL._SL160_.jpg" alt="" style="border: none;" />
+          </a>
+          <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
 
 
-        <p><li style="margin-left:22px;">ロジカルシンキング</li></p>
-　　        <a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F453404562X" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
-        <img src="https://images-fe.ssl-images-amazon.com/images/I/41OiaeMSxaL._SL160_.jpg" alt="" style="border: none;" />
-        </a>
-        <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-        <br><br>
+          <p><li style="margin-left:22px;">時間管理</li></p>
+          　　<a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4788907550" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
+          <img src="https://images-fe.ssl-images-amazon.com/images/I/41qglkQH2zL._SL160_.jpg" alt="" style="border: none;" />
+          </a>
+          <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />  
+          <br><br>
+          
+          　　<a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB00BG1CA96" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
+          <img src="https://images-fe.ssl-images-amazon.com/images/I/51ZwmxI9xhL._SL160_.jpg" alt="" style="border: none;" />
+          </a>
+          <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+          <br><br>
 
-　　        <a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB01JADEKG2" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
-        <img src="https://images-fe.ssl-images-amazon.com/images/I/51hrDQikhvL._SL160_.jpg" alt="" style="border: none;" />
-        </a>
-        <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-        <br><br>
-        }
+          <p><li style="margin-left:22px;">マーケティング</li></p>
+          　　<a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB07P6XKQ14" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
+          <img src="https://images-fe.ssl-images-amazon.com/images/I/51rhY2nttBL._SL160_.jpg" alt="" style="border: none;" />
+          </a>
+          <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+          <br><br>
 
-        <p>Sponsor</p>
 
-        <script async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2127299793131419"
-          crossorigin="anonymous"></script>
-        <!-- head -->
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2127299793131419"
-          data-ad-slot="2560895837" data-ad-format="vertical" data-full-width-responsive="true"></ins>
-        <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+          <p><li style="margin-left:22px;">ロジカルシンキング</li></p>
+  　　        <a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F453404562X" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
+          <img src="https://images-fe.ssl-images-amazon.com/images/I/41OiaeMSxaL._SL160_.jpg" alt="" style="border: none;" />
+          </a>
+          <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+          <br><br>
 
-        <br>
-        <br>
+  　　        <a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB01JADEKG2" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
+          <img src="https://images-fe.ssl-images-amazon.com/images/I/51hrDQikhvL._SL160_.jpg" alt="" style="border: none;" />
+          </a>
+          <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+          <br><br>
+          }
 
-        <script async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2127299793131419"
-          crossorigin="anonymous"></script>
-        <!-- head -->
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2127299793131419"
-          data-ad-slot="2560895837" data-ad-format="vertical" data-full-width-responsive="true"></ins>
-        <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+          <p>Sponsor</p>
+
+          <script async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2127299793131419"
+            crossorigin="anonymous"></script>
+          <!-- head -->
+          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2127299793131419"
+            data-ad-slot="2560895837" data-ad-format="vertical" data-full-width-responsive="true"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+
+          <br>
+          <br>
+
+          <script async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2127299793131419"
+            crossorigin="anonymous"></script>
+          <!-- head -->
+          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2127299793131419"
+            data-ad-slot="2560895837" data-ad-format="vertical" data-full-width-responsive="true"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
       </div>
     </div>
   </div>

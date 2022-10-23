@@ -206,8 +206,10 @@ protected override async Task OnInitializedAsync()
 
 
 <br>
-<br>
 
 以上です。
+
+<br>
+<br>
 
 ---

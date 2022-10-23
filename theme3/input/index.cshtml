@@ -39,6 +39,7 @@
     IDocument document_tils = Outputs.Get("tils.html");
     IDocument document_about = Outputs.Get("about.html");
     IDocument document_tech = Outputs.Get("tech.html");
+    IDocument document_minecraft = Outputs.Get("minecraft.html");
   }
   <div class="header">
     <br>
@@ -76,6 +77,10 @@
       <div class="contents-menu" style="background-image:url('@Context.GetLink("/img/main_about.png")');">
         <a class="contents-font">ABOUT</a>
         <a href="@Context.GetLink(document_about)" class="contents-link"></a>
+      </div>
+      <div class="contents-menu" style="background-image:url('@Context.GetLink("/img/main_minecraft.png")');">
+        <a class="contents-font">MineCraft</a>
+        <a href="@Context.GetLink(document_minecraft)" class="contents-link"></a>
       </div>
     </div>
   </div>

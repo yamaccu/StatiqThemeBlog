@@ -49,6 +49,16 @@ sudo make install
 bash Start.sh
 ```
 
+ラズパイカメラを使用する場合は、実行するコマンドのインプット設定を以下のようにします。    
+※元のコマンド（input_uvc）のままラズパイカメラを使用すると、解像度が悪いなど設定が変になる可能性があります。  
+
+```C#
+./mjpg_streamer -i "./input_raspicam.so" -o "./output_http.so -w ./www"
+```
+
+コマンドのオプションは下記を参照ください。  
+<span class="link"></span>[input_raspicam/README.md](https://github.com/jacksonliam/mjpg-streamer/blob/master/mjpg-streamer-experimental/plugins/input_raspicam/README.md)  
+
 <br>
 
 ## 4. 映像を確認します。
@@ -84,6 +94,7 @@ ffmpeg -i http://localhost:8080/?action=stream file.avi
 
 以上です。  
 
+<br>
 <br>
 
 ---

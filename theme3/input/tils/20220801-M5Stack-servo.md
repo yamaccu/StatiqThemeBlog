@@ -129,7 +129,7 @@ attach
 - max： 制御パルス幅の最大値を[us]で指定します。 
 
 write
-- valur： 回転角を[°]で指定します。  
+- value： 回転角を[°]で指定します。  
 
 
 ## ServoEasingライブラリを使う
@@ -184,7 +184,7 @@ synchronizeAllServosStartAndWaitForAllServosToStop
 
 ## サーボモータの紹介
 
-この記事では、SG82Rというサーボモータを使用しています。  
+この記事では、SG92Rというサーボモータを使用しています。  
 値段がお手頃で使いやすいです。  
 
 <!-- START MoshimoAffiliateEasyLink -->
@@ -202,10 +202,14 @@ msmaflink({"n":"マイクロサーボ SG92R (1個)","b":"TOWER PRO","t":"SG92R",
 
 秋葉原へ行けるのであれば、<span class="link"></span>[秋月電子](https://akizukidenshi.com/catalog/g/gM-08914/)でも購入できます。  
 
+また、他のサーボについては、以下のサイトが長所・短所がまとまっておりお勧めです。  
+<span class="link"></span>[ｽﾀｯｸﾁｬﾝ M5GoBottom版で試したPWMサーボ（SG90系）](https://raspberrypi.mongonta.com/howto-select-pwm-servos-for-stackchan/)
+
 
 
 <br>
 以上です。
+<br>
 <br>
 
 ---

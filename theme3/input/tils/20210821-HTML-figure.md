@@ -121,6 +121,10 @@ divを使うと前後に改行が入ります。
 <span class="link"></span> [CSSの疑似要素とは？beforeとafterの使い方まとめ](https://saruwakakun.com/html-css/basic/before-after)
 
 <br>
+
+以上です。
+
+<br>
 <br>
 
 ---
