@@ -24,12 +24,16 @@ M5Stack界隈で爆発的な人気を誇る、ｽﾀｯｸﾁｬﾝを作って�
 ｽﾀｯｸﾁｬﾝとは、オープンソースの手乗りサイズロボットです。  
 詳細は下記のサイトをご覧ください。  
 
-<a href="https://protopedia.net/prototype/2345" style="text-decoration: none;"><div class="link-box"><div class="img-box"><div style="background-image: url('https://protopedia.net/pic/aa9886bf-87a9-4312-a8db-3c11c6fe227a.jpg');"></div></div><div class="text-box"><p class="title">スタックチャン（Stack-chan） | ProtoPedia</p><p class="description">コミュニケーションロボットを、あなたの手に。</p></div></div></a>
+<a href="https://protopedia.net/prototype/2345" style="text-decoration: none;">
+<div class="link-box"><div class="img-box"><div style="background-image: url('https://protopedia.net/pic/aa9886bf-87a9-4312-a8db-3c11c6fe227a.jpg');"></div></div><div class="text-box"><p class="title">スタックチャン（Stack-chan） | ProtoPedia</p><p class="description">コミュニケーションロボットを、あなたの手に。</p></div></div>
+</a>
 
 オープンソースなので、設計データはgithubで公開されております。  
 3Dプリンタ用のデータ、回路/基板の設計資料、ソフトウェアなど、作製に必要なデータが全て揃っています。  
 
-<a href="https://github.com/meganetaaan/stack-chan" style="text-decoration: none;"><div class="link-box"><div class="img-box"><div style="background-image: url('https://repository-images.githubusercontent.com/374381865/15eebe83-6776-4e19-ae40-3197c7f7f681');"></div></div><div class="text-box"><p class="title">GitHub - meganetaaan/stack-chan</p><p class="description">A JavaScript-driven M5Stack-embedded super-kawaii robot.</p></div></div></a>
+<a href="https://github.com/meganetaaan/stack-chan" style="text-decoration: none;">
+<div class="link-box"><div class="img-box"><div style="background-image: url('https://repository-images.githubusercontent.com/374381865/15eebe83-6776-4e19-ae40-3197c7f7f681');"></div></div><div class="text-box"><p class="title">GitHub - meganetaaan/stack-chan</p><p class="description">A JavaScript-driven M5Stack-embedded super-kawaii robot.</p></div></div>
+</a>
 
 このｽﾀｯｸﾁｬﾝのコンセプトに大勢の方が賛同しており、各々が独自のｽﾀｯｸﾁｬﾝを産み出し、コミュニティを盛り上げています。  
 twitterで <span class="link"></span>[#ｽﾀｯｸﾁｬﾝ](https://twitter.com/search?q=%23%EF%BD%BD%EF%BE%80%EF%BD%AF%EF%BD%B8%EF%BE%81%EF%BD%AC%EF%BE%9D&src=typed_query&f=top)  を検索してみてください。  
@@ -80,7 +84,9 @@ twitterで <span class="link"></span>[#ｽﾀｯｸﾁｬﾝ](https://twitter.co
 ちなみに、有志の方のキット販売もありますので、そちらの方が簡単かもしれません。  
 以下にリンクを貼っておきます。  
 
-<a href="https://mongonta.booth.pm/" style="text-decoration: none;"><div class="link-box"><div class="img-box"><div style="background-image: url('https://booth.pximg.net/c/620x620/8d274102-a3dc-4d1c-ae0d-f2872c2a826d/i/3840834/585b8780-46eb-411f-87bb-37b16d306044_base_resized.jpg');"></div></div><div class="text-box"><p class="title">Arpeggio Factory - BOOTH</p><p class="description">ｽﾀｯｸﾁｬﾝの組み立てキットや電子部品を展開しています。 ご不明な点がございましたらお気軽にお問い合わせください。 </p></div></div></a>
+<a href="https://mongonta.booth.pm/" style="text-decoration: none;">
+<div class="link-box"><div class="img-box"><div style="background-image: url('https://booth.pximg.net/c/620x620/8d274102-a3dc-4d1c-ae0d-f2872c2a826d/i/3840834/585b8780-46eb-411f-87bb-37b16d306044_base_resized.jpg');"></div></div><div class="text-box"><p class="title">Arpeggio Factory - BOOTH</p><p class="description">ｽﾀｯｸﾁｬﾝの組み立てキットや電子部品を展開しています。 ご不明な点がございましたらお気軽にお問い合わせください。 </p></div></div>
+</a>
 
 
 ### 材料
@@ -114,16 +120,22 @@ twitterで <span class="link"></span>[#ｽﾀｯｸﾁｬﾝ](https://twitter.co
 以下のgithubにある3Dプリンタ用ファイルを、3Dプリンタで出力します。  
 使用するサーボモータによって、プリントするファイルが異なりますのでご注意ください。  
 
-<a href="https://github.com/meganetaaan/stack-chan/tree/main/case" style="text-decoration: none;"><div class="link-box"><div class="img-box"><div style="background-image: url('https://repository-images.githubusercontent.com/374381865/15eebe83-6776-4e19-ae40-3197c7f7f681');"></div></div><div class="text-box"><p class="title">stack-chan/case</p><p class="description">A JavaScript-driven M5Stack-embedded super-kawaii robot. - stack-chan/case at main · meganetaaan/stack-chan</p></div></div></a>
+<a href="https://github.com/meganetaaan/stack-chan/tree/main/case" style="text-decoration: none;">
+<div class="link-box"><div class="img-box"><div style="background-image: url('https://repository-images.githubusercontent.com/374381865/15eebe83-6776-4e19-ae40-3197c7f7f681');"></div></div><div class="text-box"><p class="title">stack-chan/case</p><p class="description">A JavaScript-driven M5Stack-embedded super-kawaii robot. - stack-chan/case at main · meganetaaan/stack-chan</p></div></div>
+</a>
 
 がしかし、普通の人は3Dプリンタを持っていないと思います。  
 私は、近所のワーキングスペースに3Dプリンタがあったので、そこでプリントしました。  
 
 3Dプリントしてくれるサービスなどもあるようです。  
 
-<a href="https://jlcpcb.com/3d-printing" style="text-decoration: none;"><div class="link-box"><div class="img-box"><div style="background-image: url('https://jlcpcb.com/ssr/img/6060.f478d7c.png');"></div></div><div class="text-box"><p class="title">JLC3D - Online 3D Printing Service | Custom Electronics Enclosures | JLCPCB</p><p class="description">JLCPCB gives you the possibility to create a ready-to-market electronic product by producing 3D printed enclosures for your PCBs.</p></div></div></a>
+<a href="https://jlcpcb.com/3d-printing" style="text-decoration: none;">
+<div class="link-box"><div class="img-box"><div style="background-image: url('https://jlcpcb.com/ssr/img/6060.f478d7c.png');"></div></div><div class="text-box"><p class="title">JLC3D - Online 3D Printing Service | Custom Electronics Enclosures | JLCPCB</p><p class="description">JLCPCB gives you the possibility to create a ready-to-market electronic product by producing 3D printed enclosures for your PCBs.</p></div></div>
+</a>
 
-<a href="https://raspberrypi.mongonta.com/how-to-order-jlcpcb-3dprinting-service/" style="text-decoration: none;"><div class="link-box"><div class="img-box"><div style="background-image: url('https://i0.wp.com/raspberrypi.mongonta.com/wp-content/uploads/2022/02/20220206_640JPG_0017-1.jpg?fit=600%2C600&ssl=1');"></div></div><div class="text-box"><p class="title">【JLCPCB 3Dプリントサービス】ユーザ登録の方法と注文を出す手順</p><p class="description">　　JLCPCBで注文を出すときの手順をまとめておきます。全て英語なのですが、DeepLやGoogle翻訳を使えば大丈夫だと思うので挑戦してみてください。</p></div></div></a>
+<a href="https://raspberrypi.mongonta.com/how-to-order-jlcpcb-3dprinting-service/" style="text-decoration: none;">
+<div class="link-box"><div class="img-box"><div style="background-image: url('https://i0.wp.com/raspberrypi.mongonta.com/wp-content/uploads/2022/02/20220206_640JPG_0017-1.jpg?fit=600%2C600&ssl=1');"></div></div><div class="text-box"><p class="title">【JLCPCB 3Dプリントサービス】ユーザ登録の方法と注文を出す手順</p><p class="description">　　JLCPCBで注文を出すときの手順をまとめておきます。全て英語なのですが、DeepLやGoogle翻訳を使えば大丈夫だと思うので挑戦してみてください。</p></div></div>
+</a>
 
 ### 基板
 
@@ -157,7 +169,9 @@ twitterで <span class="link"></span>[#ｽﾀｯｸﾁｬﾝ](https://twitter.co
 ソフトウェアはArduinoで作製しています。  
 ソースコードをGithubにまるっと上げていますので、宜しければ参照ください。  
 
-<a href="https://github.com/yamaccu/myStackchan" style="text-decoration: none;"><div class="link-box"><div class="img-box"><div style="background-image: url('https://opengraph.githubassets.com/2debe9a1db81e5e3fbe3245eb854c35174aa161642eb75bcede473280111bd90/yamaccu/myStackchan');"></div></div><div class="text-box"><p class="title">GitHub - yamaccu/myStackchan</p><p class="description">スタックチャン（自分用）. Contribute to yamaccu/myStackchan development by creating an account on GitHub.</p></div></div></a>
+<a href="https://github.com/yamaccu/myStackchan" style="text-decoration: none;">
+<div class="link-box"><div class="img-box"><div style="background-image: url('https://opengraph.githubassets.com/2debe9a1db81e5e3fbe3245eb854c35174aa161642eb75bcede473280111bd90/yamaccu/myStackchan');"></div></div><div class="text-box"><p class="title">GitHub - yamaccu/myStackchan</p><p class="description">スタックチャン（自分用）. Contribute to yamaccu/myStackchan development by creating an account on GitHub.</p></div></div>
+</a>
 
 ちなみに、オリジナルのｽﾀｯｸﾁｬﾝはModdableというJavaScriptで組み込みプログラミングができるツールで作成されています。  
 
@@ -167,13 +181,17 @@ twitterで <span class="link"></span>[#ｽﾀｯｸﾁｬﾝ](https://twitter.co
 AquesTalkという音声合成ライブラリを使用してしゃべっています。  
 AquesTalkによる音声出力、およびM5Stack-Avatarによる顔の表示は、こちらでまとめています。  
 
-<a href="https://yamaccu.github.io/tils/20220829-M5Stack-AquesTalk" style="text-decoration: none;"><div class="link-box"><div class="img-box"><div style="background-image: url('https://yamaccu.github.io/img/20210823-UIFLOW-CustomBlock-1.png');"></div></div><div class="text-box"><p class="title">「M5Stack」AquesTalkを使う</p><p class="description">M5StackでAquesTalkを使用して音声出力する方法をまとめました。</p></div></div></a>
+<a href="https://yamaccu.github.io/tils/20220829-M5Stack-AquesTalk" style="text-decoration: none;">
+<div class="link-box"><div class="img-box"><div style="background-image: url('https://yamaccu.github.io/img/20210823-UIFLOW-CustomBlock-1.png');"></div></div><div class="text-box"><p class="title">「M5Stack」AquesTalkを使う</p><p class="description">M5StackでAquesTalkを使用して音声出力する方法をまとめました。</p></div></div>
+</a>
 
 しゃべる内容については、ソースコードを変えなくても内容変更できるよう、Googleスプレッドシートにしゃべる内容を記載して、SSSAPIというwebサービスでAPI化して取り込んでいます。  
 スプレッドシートを書き換えてあげると、しゃべる内容も変わります。  
 （起動時に読み込んでいるので、スプレッドシートを変えたらｽﾀｯｸﾁｬﾝを再起動しています）  
 
-<a href="https://sssapi.app/" style="text-decoration: none;"><div class="link-box"><div class="img-box"><div style="background-image: url('https://sssapi.app/ogp.png');"></div></div><div class="text-box"><p class="title">GoogleスプレッドシートのAPI化サービス -SSSAPI-</p><p class="description">ちょっとしたAPIならGoogle Spread Sheetでサクッと！ SSSAPIはGoogleスプレッドシートのAPI化サービスです。ノーコード/コードレスでスプシをAPI化。ドメイン制限や履歴も保存できます。まずは無料でおためしください。</p></div></div></a>
+<a href="https://sssapi.app/" style="text-decoration: none;">
+<div class="link-box"><div class="img-box"><div style="background-image: url('https://sssapi.app/ogp.png');"></div></div><div class="text-box"><p class="title">GoogleスプレッドシートのAPI化サービス -SSSAPI-</p><p class="description">ちょっとしたAPIならGoogle Spread Sheetでサクッと！ SSSAPIはGoogleスプレッドシートのAPI化サービスです。ノーコード/コードレスでスプシをAPI化。ドメイン制限や履歴も保存できます。まずは無料でおためしください。</p></div></div>
+</a>
 
 ### 天気予報
 
@@ -184,13 +202,17 @@ AquesTalkによる音声出力、およびM5Stack-Avatarによる顔の表示は
 * 天気予報を画面に表示
 
 wifi接続、天気予報API取得については、こちらでまとめています。
-<a href="https://yamaccu.github.io/tils/20220808-M5Stack-JSON" style="text-decoration: none;"><div class="link-box"><div class="img-box"><div style="background-image: url('https://yamaccu.github.io/img/20210823-UIFLOW-CustomBlock-1.png');"></div></div><div class="text-box"><p class="title">「M5Stack」wifi接続して天気予報JSONを取得する</p><p class="description">M5Stackでwifiに接続し、JSONを取得する方法をまとめました。
+<a href="https://yamaccu.github.io/tils/20220808-M5Stack-JSON" style="text-decoration: none;">
+<div class="link-box"><div class="img-box"><div style="background-image: url('https://yamaccu.github.io/img/20210823-UIFLOW-CustomBlock-1.png');"></div></div><div class="text-box"><p class="title">「M5Stack」wifi接続して天気予報JSONを取得する</p><p class="description">M5Stackでwifiに接続し、JSONを取得する方法をまとめました。
 web APIなどはJSON形式であることが多いので、JSONを取り扱うことで様々な情報を取り込むことができます。
-本ページでは例として、天気予報JSONを取得して画面に表示します。</p></div></div></a>
+本ページでは例として、天気予報JSONを取得して画面に表示します。</p></div></div>
+</a>
 
 画像の表示については、こちらにまとめています。  
 
-<a href="https://yamaccu.github.io/tils/20220908-M5Stack-image" style="text-decoration: none;"><div class="link-box"><div class="img-box"><div style="background-image: url('https://yamaccu.github.io/img/20210823-UIFLOW-CustomBlock-1.png');"></div></div><div class="text-box"><p class="title">「M5Stack」LCD画面に画像を表示する</p><p class="description">M5StackでLCDに画像を表示する方法をまとめました。</p></div></div></a>
+<a href="https://yamaccu.github.io/tils/20220908-M5Stack-image" style="text-decoration: none;">
+<div class="link-box"><div class="img-box"><div style="background-image: url('https://yamaccu.github.io/img/20210823-UIFLOW-CustomBlock-1.png');"></div></div><div class="text-box"><p class="title">「M5Stack」LCD画面に画像を表示する</p><p class="description">M5StackでLCDに画像を表示する方法をまとめました。</p></div></div>
+</a>
 
 
 
@@ -217,6 +239,34 @@ while(true)
     int minutes = collapseTime / 60000;
     sprintf(talk, "<NUMK VAL=%d COUNTER=funn>/ke-ka.", minutes);
     playAquesTalk(talk);
+  }
+
+  M5.update();
+  if (M5.BtnA.wasClicked() || M5.BtnB.wasClicked() || M5.BtnC.wasClicked())
+  {
+    int finishTimeMinute = collapseTime / 60000;
+    int finishTimeSecond = (collapseTime / 1000) % 60;
+
+    playAquesTalk("kaka'tta/jikannwa");
+    waitAquesTalk();
+    if (finishTimeMinute > 0)
+    {
+      sprintf(talk, "<NUMK VAL=%d COUNTER=funn>", finishTimeMinute);
+      playAquesTalk(talk);
+      waitAquesTalk();
+    }
+    sprintf(talk, "<NUMK VAL=%d COUNTER=byo->", finishTimeSecond);
+    playAquesTalk(talk);
+    waitAquesTalk();
+    playAquesTalk("dayo");
+    waitAquesTalk();
+    delay(200);
+
+    playAquesTalk("o_tsukaresamade'shi'ta-");
+    waitAquesTalk();
+
+    startTime = millis();
+    break;
   }
 }
 ```

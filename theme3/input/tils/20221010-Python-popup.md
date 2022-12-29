@@ -10,14 +10,25 @@ description: pythonで作成したCUIで、エラー・確認などのポップ�
 
 ---
 
-pythonでCUIアプリ（Character User Interface）を作成したときに、処理の途中でエラーなどのポップアップ（メッセージボックス）や、ファイル選択のダイアログを出す方法をまとめました。
+pythonでCUIアプリ（Character User Interface）を作成したときに、エラーなどのポップアップ（メッセージボックス）や、ファイル選択のダイアログを出す方法をまとめました。
 
 
 ## 使用するライブラリ
 
 pythonでポップアップを出すライブラリはいくつかありますが、本ページでは、デフォルトでpythonに含まれている"tkinter"を使用します。  
 
-<a href="https://docs.python.org/ja/3/library/tkinter.html" style="text-decoration: none;"><div class="link-box"><div class="img-box"><div style="background-image: url('https://docs.python.org/ja/3/_static/py.svg');"></div></div><div class="text-box"><p class="title">tkinter</p><p class="description">Tcl/Tk の Python インターフェース</p></div></div></a>
+<a href="https://docs.python.org/ja/3/library/tkinter.html" style="text-decoration: none;">
+<div class="link-box">
+<div class="img-box">
+<div style="background-image: url('https://docs.python.org/ja/3/_static/py.svg');">
+</div>
+</div>
+<div class="text-box">
+<p class="title">tkinter</p>
+<p class="description">Tcl/Tk の Python インターフェース</p>
+</div>
+</div>
+</a>
 
 
 ## ポップアップ（メッセージボックス）
@@ -58,7 +69,7 @@ messagebox
 
 <div style="display:flex; flex-wrap:wrap">
 <img src="../img/20221010-Python-popup-1.png" style="width:100%; max-width:150px;" alt="Tkinter MessageBox.showinfoの画像">
-<div style="margin-left:5px; width:100%;">
+<div style="margin-left:5px; width:100%; max-width:610px;">
 
 ```python
 messagebox.showinfo('showinfo', 'information')
@@ -71,7 +82,7 @@ messagebox.showinfo('showinfo', 'information')
 
 <div style="display:flex; flex-wrap:wrap">
 <img src="../img/20221010-Python-popup-2.png" style="width:100%; max-width:132px;" alt="Tkinter MessageBox.showwarningの画像">
-<div style="margin-left:5px; width:100%;">
+<div style="margin-left:5px; width:100%; max-width:610px;">
 
 ```python
 messagebox.showwarning('showwarning', 'warning')
@@ -84,7 +95,7 @@ messagebox.showwarning('showwarning', 'warning')
 
 <div style="display:flex; flex-wrap:wrap">
 <img src="../img/20221010-Python-popup-3.png" style="width:100%; max-width:118px;" alt="Tkinter MessageBox.showerrorの画像">
-<div style="margin-left:5px; width:100%;">
+<div style="margin-left:5px; width:100%; max-width:610px;">
 
 ```python
 messagebox.showerror('showerror', 'error')
@@ -97,7 +108,7 @@ messagebox.showerror('showerror', 'error')
 
 <div style="display:flex; flex-wrap:wrap">
 <img src="../img/20221010-Python-popup-4.png" style="width:100%; max-width:210px;" alt="Tkinter MessageBox.askquestionの画像">
-<div style="margin-left:5px; width:100%;">
+<div style="margin-left:5px; width:100%; max-width:610px;">
 
 ```python
 messagebox.askquestion('askquestion', 'yes or no ?')
@@ -113,7 +124,7 @@ messagebox.askquestion('askquestion', 'yes or no ?')
 
 <div style="display:flex; flex-wrap:wrap">
 <img src="../img/20221010-Python-popup-5.png" style="width:100%; max-width:210px;" alt="Tkinter MessageBox.askokcancelの画像">
-<div style="margin-left:5px; width:100%;">
+<div style="margin-left:5px; width:100%; max-width:610px;">
 
 ```python
 messagebox.askokcancel('askokcancel', 'OK or cancel ?')
@@ -129,7 +140,7 @@ messagebox.askokcancel('askokcancel', 'OK or cancel ?')
 
 <div style="display:flex; flex-wrap:wrap">
 <img src="../img/20221010-Python-popup-6.png" style="width:100%; max-width:210px;" alt="Tkinter MessageBox.askretrycancelの画像">
-<div style="margin-left:5px; width:100%;">
+<div style="margin-left:5px; width:100%; max-width:610px;">
 
 ```python
 messagebox.askretrycancel('askretrycancel', 'Retry or Cancel ?')
@@ -145,7 +156,7 @@ messagebox.askretrycancel('askretrycancel', 'Retry or Cancel ?')
 
 <div style="display:flex; flex-wrap:wrap">
 <img src="../img/20221010-Python-popup-7.png" style="width:100%; max-width:210px;" alt="Tkinter MessageBox.askyesnoの画像">
-<div style="margin-left:5px; width:100%;">
+<div style="margin-left:5px; width:100%; max-width:610px;">
 
 ```python
 messagebox.askyesno('askyesno', 'Yes or No ?')
@@ -161,7 +172,7 @@ messagebox.askyesno('askyesno', 'Yes or No ?')
 
 <div style="display:flex; flex-wrap:wrap">
 <img src="../img/20221010-Python-popup-8.png" style="width:100%; max-width:290px;" alt="Tkinter MessageBox.askyesnocancelの画像">
-<div style="margin-left:5px; width:100%;">
+<div style="margin-left:5px; width:100%; max-width:640px;">
 
 ```python
 messagebox.askyesnocancel('askyesnocancel', 'Yes or No or Cancel ?')
@@ -182,8 +193,13 @@ messagebox.askyesnocancel('askyesnocancel', 'Yes or No or Cancel ?')
 import tkinter
 from tkinter import filedialog
 
+tk = tkinter
+tk.Tk().withdraw()
+
 type = [('テキストファイル','*.txt')] 
 path = tk.filedialog.askopenfilename(filetypes = type)
+
+pathdirectory = tk.filedialog.askdirectory()
 ```
 
 filedialog.askopenfilename
@@ -193,6 +209,13 @@ filedialog.askopenfilename
 
 <img src="../img/20221010-Python-popup-9.png" style="width:100%; max-width:330px;" alt="Tkinter filedialog.askopenfilenameの画像">
 
+<br>
+
+filedialog.askdirectory
+
+* ファイル選択ダイアログを開き、選択したフォルダの絶対パスを戻します。
+
+<br>
 <br>
 
 以上です。

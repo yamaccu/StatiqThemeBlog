@@ -1,0 +1,25 @@
+title: Web APP
+layout: _app_layout.cshtml
+---
+
+@foreach(IDocument document in Outputs.Get("app_archive.html").GetChildren())
+{
+  @foreach (IDocument posts in document.GetChildren())
+  {
+    <div style="height:140px; max-width:800px; margin-left:auto; margin-right:auto;">
+      <a href="@Context.GetLink(posts)">
+        <div style="display:flex; flex-wrap:nowrap;">
+          <div style="height:150px;width:150px;flex-shrink: 0;border-radius:5px; background-image:url('@Context.GetLink(@posts.GetString("Image"))'); background-repeat:no-repeat; background-size:contain;">
+          </div>
+          <div style="height:150px;color:dimgray;margin-left:5px;">
+              <p style="color:darkgray; position:relative; margin-top:-1px;">@posts.GetString("Date")</p>
+              <p style="font-weight:bold;">【@posts.GetString("Title")】</p>
+              <p>&nbsp;&nbsp;@posts.GetString("description")</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <br>
+    <br>
+  }
+}

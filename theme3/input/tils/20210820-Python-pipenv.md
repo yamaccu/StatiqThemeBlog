@@ -18,7 +18,19 @@ Pythonでプログラミングを行う際には、作るプログラムごと�
 
 仮想環境の作成にはいくつか方法がありますが、ここではpipenvを使用します。  
 
-参考　<span class="link"></span> [pipenv公式](https://pipenv.pypa.io/en/latest/)
+<a href="https://pipenv.pypa.io/en/latest/" style="text-decoration: none;">
+  <div class="link-box">
+    <div class="img-box">
+      <div style="background-image: url('https://pipenv.pypa.io/en/latest/_static/pipenv.png');">
+      </div>
+    </div>
+    <div class="text-box">
+      <p class="title">Pipenv: Python Dev Workflow for Humans</p>
+      <p class="description">Pipenv is a tool that aims to bring the best of all packaging worlds (bundler, composer, npm, cargo, yarn, etc.) to the Python world.</p>
+    </div>
+  </div>
+</a>
+
 
 ## 仮想環境の作成手順
 ### 1. pipenvをインストールします。
@@ -34,6 +46,21 @@ pip install pipenv
 
 ```C#
 pipenv install xxxxxx
+```
+
+インストールするパッケージが多い場合は、txtファイルでリストを作って、一気に読み込むこともできます。  
+requirementsというファイルを作り、中身を例えば以下のように作成します。  
+
+```C#
+xxxx==9.0.0
+xxxx==1.5.0
+xxxx==2.7.0
+```
+
+そして、下記のコマンドで一括インストールします。
+
+```C#
+pipenv install -r requirements.txt
 ```
 
 ### 4. 仮想環境を実行します。

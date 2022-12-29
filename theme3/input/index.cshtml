@@ -39,6 +39,7 @@
     IDocument document_tils = Outputs.Get("tils.html");
     IDocument document_about = Outputs.Get("about.html");
     IDocument document_tech = Outputs.Get("tech.html");
+    IDocument document_app = Outputs.Get("app.html");
     IDocument document_minecraft = Outputs.Get("minecraft.html");
   }
   <div class="header">
@@ -74,13 +75,19 @@
         <a class="contents-font">TIL (Today I Learned)</a>
         <a href="@Context.GetLink(document_tils)" class="contents-link"></a>
       </div>
-      <div class="contents-menu" style="background-image:url('@Context.GetLink("/img/main_about.png")');">
-        <a class="contents-font">ABOUT</a>
-        <a href="@Context.GetLink(document_about)" class="contents-link"></a>
+      <div class="contents-menu" style="background-image:url('@Context.GetLink("/img/main_webapp.png")');">
+        <a class="contents-font">WebAPP</a>
+        <a href="@Context.GetLink(document_app)" class="contents-link"></a>
       </div>
       <div class="contents-menu" style="background-image:url('@Context.GetLink("/img/main_minecraft.png")');">
         <a class="contents-font">MineCraft</a>
         <a href="@Context.GetLink(document_minecraft)" class="contents-link"></a>
+      </div>
+    </div>
+    <div class="flex-wrap-center">
+      <div class="contents-menu" style="background-image:url('@Context.GetLink("/img/main_about.png")');">
+        <a class="contents-font">ABOUT</a>
+        <a href="@Context.GetLink(document_about)" class="contents-link"></a>
       </div>
     </div>
   </div>
@@ -117,24 +124,28 @@
 <br>
 <br>
 
-<div style="margin-top:10px;text-align:center;">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2127299793131419"
-  crossorigin="anonymous"></script>
-  <!-- head -->
-  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2127299793131419" data-ad-slot="2560895837"
-  data-ad-format="horizontal" data-full-width-responsive="true"></ins>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-  <br>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2127299793131419"
-  crossorigin="anonymous"></script>
-  <!-- head -->
-  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2127299793131419" data-ad-slot="2560895837"
-  data-ad-format="horizontal" data-full-width-responsive="true"></ins>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
+<div style="margin-top:10px;text-align:center;display:flex;justify-content:center;flex-wrap:wrap">
+  <div style="width:43%;min-width:410px;">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2127299793131419"
+    crossorigin="anonymous"></script>
+    <!-- head -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2127299793131419" data-ad-slot="2560895837"
+    data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+  &nbsp;
+  <div style="width:43%;min-width:410px;">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2127299793131419"
+    crossorigin="anonymous"></script>
+    <!-- head -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2127299793131419" data-ad-slot="2560895837"
+    data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
 </div>
 
 </body>

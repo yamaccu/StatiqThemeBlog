@@ -42,7 +42,9 @@ if(now - starttime2 > 5000)
 
 MsTimer2は、arduinoに使われているマイコン「ATmega328p」に内蔵されているtimer2を簡単に使うためのライブラリです。  
 
-<span class="link"></span> [github MsTimer2](https://github.com/PaulStoffregen/MsTimer2)
+[![Readme Card](https://vercel-serverless-functions-henna.vercel.app/api/pin?username=PaulStoffregen&repo=MsTimer2)](https://github.com/PaulStoffregen/MsTimer2)  
+
+<br>
 
 以下のようにすると、指定した時間ごとに割込みで処理を実行してくれます。  
 
@@ -109,8 +111,10 @@ unsigned long b = 4294967296;
 Serial.println(a-b);    //1000がシリアルモニタに表示される
 ```
 
-参考 <span Class="link"></span>[millis()のオーバーフロー](https://garretlab.web.fc2.com/arduino/lab/millis/)
-
+参考HP
+<a href="https://garretlab.web.fc2.com/arduino/lab/millis/" style="text-decoration: none;">
+<div class="link-box"><div class="img-box"><div style="background-image: url('https://garretlab.web.fc2.com/images/garretlab_ogp.png');"></div></div><div class="text-box"><p class="title">millis()のオーバーフロー</p><p class="description">millis()のオーバーフローの実験を行った結果です。</p></div></div>
+</a>
 
 <br>
 
@@ -118,4 +122,5 @@ Serial.println(a-b);    //1000がシリアルモニタに表示される
 
 <br>
 <br>
+
 ---

@@ -1,0 +1,161 @@
+Title: ProtoPediaのユーザー情報のバッジを作成する
+Date: 2022/12/6
+tag: app
+Image: /img/20221206_protopedia_badge-1.png
+description: githubのreadmeなどに使える、ProtoPediaのバッジを作成できるページです。
+IndexTitle: ProtoPedia向けバッジ作成
+---
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>@Document.GetString("Title") | @Context.GetString("SiteTitle")</title>
+
+  <link href="@Context.GetLink("/scss/app.css")" rel="stylesheet" type="text/css">
+  <link href="@Context.GetLink("/scss/prism.css")" rel="stylesheet" type="text/css">
+  <script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.19.0/components/prism-core.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.19.0/plugins/autoloader/prism-autoloader.min.js"
+    data-no-mirror></script>
+
+  <link rel="shortcut icon" href="@Context.GetLink("/favicon.ico")" type="image/x-icon">
+  <link rel="icon" href="@Context.GetLink("/favicon.ico")" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+
+  <script data-ad-client="ca-pub-2127299793131419" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-197465108-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-197465108-1');
+  </script>
+
+  <meta property="og:title" content="@Document.GetString("Title")" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="@Document.GetLink(true)" />
+  <meta property="og:site_name" content="@Context.GetString("SiteTitle")" />
+  <meta property="og:locale" content="ja_JP" />
+
+</head>
+
+<header style="background-image:url('@Context.GetLink("/img/main2.png")')">
+  @{
+    IDocument document_index = Outputs.Get("index.html");
+    IDocument document_app = Outputs.Get("app.html");
+  }
+  <div class="flex-wrap">
+    <div>
+      <a href="@Context.GetLink(document_app)" class="title">
+        WEB APP
+      </a>
+    </div>
+    <div class="ext-link">
+      <a href="@Context.GetLink(document_index)"><img src="@(Context.GetLink("/img/home.png"))" class="ext-link-icon"
+          alt="homeへのリンク"></a>&nbsp;&nbsp;
+      <a href="https://twitter.com/YY87750722"><img src="@(Context.GetLink("/img/twitter.png"))" class="ext-link-icon"
+          alt="twitterへのリンク"></a>&nbsp;&nbsp;
+      <a href="https://github.com/yamaccu"><img src="@(Context.GetLink("/img/github.png"))" class="ext-link-icon"
+          alt="githubへのリンク"></a>
+    </div>
+  </div>
+  <br>
+</header>
+
+<body class="body-font">
+  <div class="post-wrap">
+    <div class="body-post">
+      <h1> ProtoPediaのバッジメーカー </h1>
+
+      <p>アカウント名を入力してください</p>
+      <p><input type="text" id="userInput" value="yamaccu"></p>
+      <p><input type="button" value="GET" onclick="AddStringToTextarea();"></p>
+      <br>
+      <p>MarkDownにコピペしてご使用ください<input type="button" value="Copy text" style="margin-left:20px" onclick="copyToClipboard();"></p>
+      <p><textarea id="inputedList" wrap="off" style="max-width:1100px;width:100%;height:110px;overflow-x:auto;overflow-y: hidden; " readonly></textarea></p>
+
+      <p>Sample</p>
+
+      <article id="content_area"></article>
+
+      <br>
+
+      <p>注意書き</p>
+      <ul>
+        <li>Sampleは表示まで数秒かかる場合があります。</li>
+        <li><a href="https://protopediaapi.docs.apiary.io/"><span class="link"></span> ProtoPedia API、<a href="https://shields.io/"><span class="link"></span> Shields.io</a>を使用しています。</li>
+        <li>不都合などありましたら右上のTwitterのDMで連絡をお願いいたします。</li>
+      </ul>
+
+      <br><br><br><br>
+
+      <div style="margin-top:10px;text-align:center;display:flex;justify-content:center;flex-wrap:wrap">
+        <div style="width:43%;min-width:410px;">
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2127299793131419"
+          crossorigin="anonymous"></script>
+          <!-- head -->
+          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2127299793131419" data-ad-slot="2560895837"
+          data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+        &nbsp;
+        <div style="width:43%;min-width:410px;">
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2127299793131419"
+          crossorigin="anonymous"></script>
+          <!-- head -->
+          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2127299793131419" data-ad-slot="2560895837"
+          data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+      </div>
+
+      <script>
+        async function AddStringToTextarea() {
+          const username = document.getElementById('userInput').value;
+          const content_area = document.getElementById("content_area");
+
+          document.getElementById('inputedList').value = `# posts
+[![ProtoPedia posts](https://vercel-serverless-functions-henna.vercel.app/api/protopedia?username=${username}&post=true)](https://protopedia.net/prototyper/${username})
+# views
+[![ProtoPedia views](https://vercel-serverless-functions-henna.vercel.app/api/protopedia?username=${username}&view=true)](https://protopedia.net/prototyper/${username})
+# good
+[![ProtoPedia good](https://vercel-serverless-functions-henna.vercel.app/api/protopedia?username=${username}&good=true)](https://protopedia.net/prototyper/${username})
+`;
+
+          const img_element_post = document.createElement('img');
+          const img_element_view = document.createElement('img');
+          const img_element_good = document.createElement('img');
+          img_element_post.src = `https://vercel-serverless-functions-henna.vercel.app/api/protopedia?username=${username}&post=true`;
+          img_element_view.src = `https://vercel-serverless-functions-henna.vercel.app/api/protopedia?username=${username}&view=true`;
+          img_element_good.src = `https://vercel-serverless-functions-henna.vercel.app/api/protopedia?username=${username}&good=true`;
+
+          while (content_area.lastChild) {
+            content_area.removeChild(content_area.lastChild);
+          };
+          content_area.appendChild(img_element_post);
+          content_area.appendChild(img_element_view);
+          content_area.appendChild(img_element_good);
+        }
+
+        function copyToClipboard() {
+          const copyTarget = document.getElementById("inputedList");
+          copyTarget.select();
+          document.execCommand("Copy");
+        }
+      </script>
+    </div>
+  </div>
+</body>
+
+</html>

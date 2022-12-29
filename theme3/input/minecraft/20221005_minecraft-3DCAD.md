@@ -23,7 +23,9 @@ Tinker CADというフリーの3D CADソフトを使うと、3Dデータをマ�
 
 以下のサイトにアクセスして、右上の「サインアップ」から新規登録します。  
 
-<a href="https://www.tinkercad.com/" style="text-decoration: none;"><div class="link-box"><div class="img-box"><div style="background-image: url('https://www.tinkercad.com/img/tinkercad-logo.png');"></div></div><div class="text-box"><p class="title">Tinkercad | From mind to design in minutes</p><p class="description">Tinkercad is a free, easy-to-use app for 3D design, electronics, and coding.</p></div></div></a>
+<a href="https://www.tinkercad.com/" style="text-decoration: none;">
+<div class="link-box"><div class="img-box"><div style="background-image: url('https://www.tinkercad.com/img/tinkercad-logo.png');"></div></div><div class="text-box"><p class="title">Tinkercad | From mind to design in minutes</p><p class="description">Tinkercad is a free, easy-to-use app for 3D design, electronics, and coding.</p></div></div>
+</a>
 
 
 ## 2. 3Dデザインを作る
@@ -48,7 +50,9 @@ Tinker CADというフリーの3D CADソフトを使うと、3Dデータをマ�
 
 PC限定ですが、Amulet editorというワールド編集アプリを使用すると、.schematicファイルを読み込んでマイクラ統合版のワールドに配置することができます。  
 
-<a href="https://www.amuletmc.com/" style="text-decoration: none;"><div class="link-box"><div class="img-box"><div style="background-image: url('https://static.wixstatic.com/media/048dc9_85ff7d61ff44477192ed6293f27de48f~mv2.png/v1/fill/w_2500,h_962,al_c/048dc9_85ff7d61ff44477192ed6293f27de48f~mv2.png');"></div></div><div class="text-box"><p class="title">Amulet Editor</p><p class="description">Amulet Map Editor is a Minecraft map editor made by the Amulet Team, a team created by MCEdit-Unified contributers.</p></div></div></a>
+<a href="https://www.amuletmc.com/" style="text-decoration: none;">
+<div class="link-box"><div class="img-box"><div style="background-image: url('https://static.wixstatic.com/media/048dc9_85ff7d61ff44477192ed6293f27de48f~mv2.png/v1/fill/w_2500,h_962,al_c/048dc9_85ff7d61ff44477192ed6293f27de48f~mv2.png');"></div></div><div class="text-box"><p class="title">Amulet Editor</p><p class="description">Amulet Map Editor is a Minecraft map editor made by the Amulet Team, a team created by MCEdit-Unified contributers.</p></div></div>
+</a>
 
 ダウンロードして実行すると、下のようにワールドマップを開くことができますので、importボタンを押します。  
 &nbsp;&nbsp;<img src="../img/20221005_minecraft-3DCAD-5.png" style="width:100%; max-width:600px; margin-top:5px" alt="Amuletに.schematicファイルをインポートする方法1">
@@ -73,7 +77,9 @@ PC限定ですが、Amulet editorというワールド編集アプリを使用�
 
 以下のページの最下段の「バニラ　ビヘイビアーパック」をダウンロードします。  
 
-<a href="https://learn.microsoft.com/ja-jp/minecraft/creator/" style="text-decoration: none;"><div class="link-box"><div class="img-box"><div style="background-image: url('https://learn.microsoft.com/en-us/media/logos/logo-ms-social.png');"></div></div><div class="text-box"><p class="title">Minecraft: Bedrock Edition クリエイター ドキュメント</p><p class="description">アドオンを使用して Minecraft に MOD を入れる方法を学びましょう。 スキンを作成したり、ユニークな体験を設計したり、最新機能を入手したりしながら、Minecraft のクリエイターとしてスキルを磨いていくことができます。</p></div></div></a>  
+<a href="https://learn.microsoft.com/ja-jp/minecraft/creator/" style="text-decoration: none;">
+<div class="link-box"><div class="img-box"><div style="background-image: url('https://learn.microsoft.com/en-us/media/logos/logo-ms-social.png');"></div></div><div class="text-box"><p class="title">Minecraft: Bedrock Edition クリエイター ドキュメント</p><p class="description">アドオンを使用して Minecraft に MOD を入れる方法を学びましょう。 スキンを作成したり、ユニークな体験を設計したり、最新機能を入手したりしながら、Minecraft のクリエイターとしてスキルを磨いていくことができます。</p></div></div>
+</a>  
 
 ### ② structuresフォルダを作成する  
 
@@ -88,7 +94,9 @@ PC限定ですが、Amulet editorというワールド編集アプリを使用�
 変換するアプリは以下を使用できます。  
 アプリを使って生成した.mcstructureファイルを上記のstructuresフォルダに保存します。  
 
-<a href="https://github.com/yamaccu/Minecraft-SchematicToMcstructure" style="text-decoration: none;"><div class="link-box"><div class="img-box"><div style="background-image: url('https://opengraph.githubassets.com/4f9b88def71d78d01afd219655ea1cc2e61c283effee50086998adcb6ede6246/yamaccu/Minecraft-SchematicToMcstructure');"></div></div><div class="text-box"><p class="title">GitHub - yamaccu/Minecraft-SchematicToMcstructure</p><p class="description">JAVA版のストラクチャーデータ（.Schematic）を、BE版のストラクチャーデータ（.mcstructure）に変換するプログラム</p></div></div></a>  
+<a href="https://github.com/yamaccu/Minecraft-SchematicToMcstructure" style="text-decoration: none;">
+<div class="link-box"><div class="img-box"><div style="background-image: url('https://opengraph.githubassets.com/4f9b88def71d78d01afd219655ea1cc2e61c283effee50086998adcb6ede6246/yamaccu/Minecraft-SchematicToMcstructure');"></div></div><div class="text-box"><p class="title">GitHub - yamaccu/Minecraft-SchematicToMcstructure</p><p class="description">JAVA版のストラクチャーデータ（.Schematic）を、BE版のストラクチャーデータ（.mcstructure）に変換するプログラム</p></div></div>
+</a>  
 
 ### ⑥ UUIDを変更する
 
@@ -96,7 +104,9 @@ PC限定ですが、Amulet editorというワールド編集アプリを使用�
 以下のサイトで取得することができます。  
 
 
-<a href="https://www.uuidgenerator.net/" style="text-decoration: none;"><div class="link-box"><div class="img-box"><div style="background-image: url('https://yamaccu.github.io/img/20221005_minecraft-3DCAD-10.png');"></div></div><div class="text-box"><p class="title">Online UUID Generator</p><p class="description"></p></div></div></a>  
+<a href="https://www.uuidgenerator.net/" style="text-decoration: none;">
+<div class="link-box"><div class="img-box"><div style="background-image: url('https://yamaccu.github.io/img/20221005_minecraft-3DCAD-10.png');"></div></div><div class="text-box"><p class="title">Online UUID Generator</p><p class="description"></p></div></div>
+</a>  
 
 manifest.jsonを開いて、下記の2か所のUUIDを取得した値に書き換えます。  
 "dependencies"の項目は不要なので消してしまいます。  

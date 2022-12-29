@@ -1,8 +1,8 @@
-Title: マイクラ統合版（BE）のアドオンの作り方② プレイヤー強化
+Title: マイクラ統合版(BE) アドオンの作り方② プレイヤー強化
 Date: 2022/10/24
 tag: addon
-Image: /img/20221021-minecraft-addon1-1.png
-description: マイクラ統合版のアドオンで、プレイヤーを強化する方法をまとめています。
+Image: /img/20221024-minecraft-addon2-2.png
+description: プレイヤーの攻撃力とハートの数を強化します。
 IndexTitle: アドオン作成② プレイヤー強化
 ---
 
@@ -14,11 +14,13 @@ IndexTitle: アドオン作成② プレイヤー強化
 
 ---
 
-マイクラ統合版のアドオン作成方法の2回目です。  
+**◆マイクラ統合版のアドオンを作る目次◆**
 
 1. [アドオンを作るための準備](https://yamaccu.github.io/minecraft/20221021_minecraft-addon1) <span class="link"></span>
-2. アドオンでプレイヤーを強化　　←今ここ
-3. 作成中・・・
+2. [アドオンを作るのに便利なVSCode拡張機能](https://yamaccu.github.io/minecraft/20221030_minecraft-vscode) <span class="link"></span>
+3. アドオンでプレイヤーを強化　　★今ここ
+4. [アドオンでアニコンを使ってコマンドを実行](https://yamaccu.github.io/minecraft/20221027_minecraft-addon3) <span class="link"></span>
+5. 作成中・・・
 
 ## 概要
 
@@ -43,7 +45,9 @@ IndexTitle: アドオン作成② プレイヤー強化
 
 バニラとは、アドオンのベースとなるデータで、これを編集してアドオンを作っていきます。  
 
-<a href="https://learn.microsoft.com/ja-jp/minecraft/creator/" style="text-decoration: none;"><div class="link-box"><div class="img-box"><div style="background-image: url('https://learn.microsoft.com/en-us/media/logos/logo-ms-social.png');"></div></div><div class="text-box"><p class="title">Minecraft: Bedrock Edition クリエイター ドキュメント</p><p class="description">アドオンを使用して Minecraft に MOD を入れる方法を学びましょう。 スキンを作成したり、ユニークな体験を設計したり、最新機能を入手したりしながら、Minecraft のクリエイターとしてスキルを磨いていくことができます。</p></div></div></a>
+<a href="https://learn.microsoft.com/ja-jp/minecraft/creator/" style="text-decoration: none;">
+<div class="link-box"><div class="img-box"><div style="background-image: url('https://learn.microsoft.com/en-us/media/logos/logo-ms-social.png');"></div></div><div class="text-box"><p class="title">Minecraft: Bedrock Edition クリエイター ドキュメント</p><p class="description">アドオンを使用して Minecraft に MOD を入れる方法を学びましょう。 スキンを作成したり、ユニークな体験を設計したり、最新機能を入手したりしながら、Minecraft のクリエイターとしてスキルを磨いていくことができます。</p></div></div>
+</a>
 
 
 ## manifest.jsonファイルのUUIDを修正する
@@ -51,7 +55,9 @@ IndexTitle: アドオン作成② プレイヤー強化
 アドオンにはUUIDというものがあり、ビヘイビアーパック内のmanifest.jsonファイル内に設定箇所があります。    
 アドオンごとに固有のものを記載する必要があり、以下のサイトで取得することができます。  
 
-<a href="https://www.uuidgenerator.net/" style="text-decoration: none;"><div class="link-box"><div class="img-box"><div style="background-image: url('https://yamaccu.github.io/img/20221005_minecraft-3DCAD-10.png');"></div></div><div class="text-box"><p class="title">Online UUID Generator</p><p class="description"></p></div></div></a>  
+<a href="https://www.uuidgenerator.net/" style="text-decoration: none;">
+<div class="link-box"><div class="img-box"><div style="background-image: url('https://yamaccu.github.io/img/20221005_minecraft-3DCAD-10.png');"></div></div><div class="text-box"><p class="title">Online UUID Generator</p><p class="description"></p></div></div>
+</a>  
 
 manifest.jsonを開いて、下記の2か所のUUIDを取得した値に書き換えます。  
 "dependencies"の項目は不要なので消してしまいます。  
@@ -162,7 +168,19 @@ entitiesフォルダのなかに、「player.json」というファイルがあ�
 <br>
 <br>
 
-以上です。  
+## まとめ
+
+entitiesの中のplayer.jsonファイルを修正することで、プレイヤーの攻撃力やハートの数などの設定を変更しました。  
+ちなみに、entitiesの中には他のモブ（ゾンビやスケルトンなど）のjsonファイルも入っています。  
+
+例えば、zombie.jsonのcompornentsに"minecraft:scale"という項目を追加して値を5とすれば、5倍の大きさのゾンビが出現します。  
+このように、entitiesのjsonファイルを変更することで、キャラクターのふるまいを変更することができます。  
+他の項目も試しに変えて、遊んでみてください。  
+
+<img src="../img/20221024-minecraft-addon2-3.png" style="width:100%; max-width:500px; margin-top:5px" alt="ゾンビを巨大化させた画像">  
+
+<br>
+<br>
 
 その３では、アニメーションコントローラという機能を使って、攻撃したときにパーティクルを発生させるコマンドを実行します。  
 

@@ -71,7 +71,9 @@ i2cdetect -y 1
 I2C通信には、smbusライブラリを使用します。  
 ラズパイに標準でインストールされています。  
 
-<a href="https://pypi.org/project/smbus2/" style="text-decoration: none;"><div class="link-box"><div class="img-box"><div style="background-image: url('https://pypi.org/static/images/twitter.6fecba6f.jpg');"></div></div><div class="text-box"><p class="title">smbus2</p><p class="description">smbus2 is a drop-in replacement for smbus-cffi/smbus-python in pure Python</p></div></div></a>
+<a href="https://pypi.org/project/smbus2/" style="text-decoration: none;">
+<div class="link-box"><div class="img-box"><div style="background-image: url('https://pypi.org/static/images/twitter.6fecba6f.jpg');"></div></div><div class="text-box"><p class="title">smbus2</p><p class="description">smbus2 is a drop-in replacement for smbus-cffi/smbus-python in pure Python</p></div></div>
+</a>
 
 以下のプログラムを実行すると、IDE下部のターミナル部分に温度と湿度が表示されます。  
 
@@ -211,7 +213,9 @@ SHT31は、センシリオン社の高性能な温湿度センサです。
 
 とかなり優秀です。  
 
-<a href="https://akizukidenshi.com/catalog/g/gK-12125/" style="text-decoration: none;"><div class="link-box"><div class="img-box"><div style="background-image: url('https://akizukidenshi.com/img/goods/C/K-12125.jpg');"></div></div><div class="text-box"><p class="title">ＳＨＴ３１使用　高精度温湿度センサモジュールキット: センサ一般 秋月電子通商-電子部品・ネット通販</p><p class="description">ＳＨＴ３１使用　高精度温湿度センサモジュールキット</p></div></div></a>
+<a href="https://akizukidenshi.com/catalog/g/gK-12125/" style="text-decoration: none;">
+<div class="link-box"><div class="img-box"><div style="background-image: url('https://akizukidenshi.com/img/goods/C/K-12125.jpg');"></div></div><div class="text-box"><p class="title">ＳＨＴ３１使用　高精度温湿度センサモジュールキット: センサ一般 秋月電子通商-電子部品・ネット通販</p><p class="description">ＳＨＴ３１使用　高精度温湿度センサモジュールキット</p></div></div>
+</a>
 
 <br>
 
