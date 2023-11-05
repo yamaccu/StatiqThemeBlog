@@ -1,4 +1,4 @@
-title: RaspberryPiで毎日決まった時間に写真を撮る
+title: 「RaspberryPi」毎日決まった時間に写真を撮る
 tag: RaspberryPi
 Date: 2022/3/29
 description: RaspberryPiにカメラを接続して、毎日決まった時間に写真を撮って保存します。

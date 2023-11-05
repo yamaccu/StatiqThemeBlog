@@ -1,4 +1,4 @@
-Title: マイクラ統合版(BE) アドオン作成に便利なVSCode拡張機能
+Title: マイクラ統合版 アドオン作成に便利なVSCode拡張機能
 Date: 2022/10/30
 tag: addon
 Image: /img/20221021-minecraft-addon1-1.png

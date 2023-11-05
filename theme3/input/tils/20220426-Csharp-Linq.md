@@ -1,5 +1,5 @@
-Title: C#のLinqまとめ
-Tag: Csharp
+Title: 「C#」Linqまとめ
+Tag: C#
 Date: 2022/4/26
 description: C#のLinqの用法をまとめました
 ---

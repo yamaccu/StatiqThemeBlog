@@ -1,6 +1,6 @@
-Title: C# WPFでBindingを使う
+Title: 「C#/WPF」Data Bindingを使う
 Published: 9/16/2021
-Tag: Csharp/WPF
+Tag: C#/WPF
 ---
 
 2021/09/16

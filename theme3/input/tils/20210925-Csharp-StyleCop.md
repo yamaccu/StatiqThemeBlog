@@ -1,5 +1,5 @@
-Title: C# StyleCop Analyzersを使う
-Tag: Csharp/ツール
+Title: 「C#」StyleCop Analyzersを使う
+Tag: C#
 Date: 2021/9/25
 ---
 

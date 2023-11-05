@@ -31,7 +31,7 @@ a{
 }
 
 .body-font{
-  font-family:'Noto Sans JP', sans-serif; 
+  font-family:'メイリオ', 'Meiryo', sans-serif; 
   color:dimgray;
 }
 
@@ -59,9 +59,6 @@ a{
   text-align: center;
 }
 
-.contents-font{
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-}
 
 .contents-link{
   display:block; 

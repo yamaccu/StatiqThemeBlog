@@ -11,17 +11,12 @@
   <script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.19.0/plugins/autoloader/prism-autoloader.min.js"
     data-no-mirror></script>
 
-  <link rel="shortcut icon" href="@Context.GetLink("/favicon.ico")" type="image/x-icon">
   <link rel="icon" href="@Context.GetLink("/favicon.ico")" type="image/x-icon">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
 
   <script data-ad-client="ca-pub-2127299793131419" async
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics  
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-197465108-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -29,6 +24,17 @@
     gtag('js', new Date());
     gtag('config', 'UA-197465108-1');
   </script>
+  -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q63MXL5083"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Q63MXL5083');
+  </script>
+
 
   <meta property="og:title" content="@Document.GetString("Title")" />
   <meta property="og:type" content="website" />
@@ -64,134 +70,80 @@
 <body class="body-font">
   <div class="post-wrap">
     <div class="body-post">
-
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2127299793131419"
-        crossorigin="anonymous"></script>
-      <!-- head -->
-      <ins class="adsbygoogle adslot_2" data-ad-client="ca-pub-2127299793131419" data-ad-slot="2560895837"
-        data-ad-format="horizontal" data-full-width-responsive="true"></ins>
-      <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-
       <br>
-      @RenderBody()
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2127299793131419"
+          crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+          style="display:block;min-width:400px;max-width:970px;width:100%;height:90px"
+          data-ad-client="ca-pub-2127299793131419" 
+          data-ad-slot="2560895837">
+        </ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      <br>
 
+      @RenderBody()
 
       @if ((Document.Destination != "tech.html") && (Document.Destination != "app.html"))
       {
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2127299793131419"
-        crossorigin="anonymous"></script>
-      <!-- head -->
-      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2127299793131419" data-ad-slot="2560895837"
-        data-ad-format="horizontal" data-full-width-responsive="true"></ins>
-      <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-
-      <h3>コメント<span class="comment">（githubのアカウントが必要です）</span></h3>
-
-      <script src="https://utteranc.es/client.js" repo="yamaccu/yamaccu.github.io" issue-term="pathname"
-        theme="github-light" crossorigin="anonymous" async>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2127299793131419"
+          crossorigin="anonymous"></script>
+        <!-- head -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2127299793131419" data-ad-slot="2560895837"
+          data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
+
+        <h3>コメント<span class="comment">（githubのアカウントが必要です）</span></h3>
+
+        <script src="https://utteranc.es/client.js" repo="yamaccu/yamaccu.github.io" issue-term="pathname"
+          theme="github-light" crossorigin="anonymous" async>
+          </script>
         <hr>
       }
 
     </div>
-    <div style="flex-basis:250px;">
-      <div style="margin-left:20px;">
+    <div style="flex-basis:250px; margin-left:20px;">
 
-        <p>Tech Blog Index</p>
+      <p>Tech Blog Index</p>
 
-          @foreach (IDocument document in Outputs.Get("tech_archive.html").GetChildren())
-          {
-            @foreach (IDocument tags in document.GetChildren())
-            {
-              <p style="margin-top:-10px; margin-left:10px;"><span style="font-size:12px;">@tags.GetString("Date")</span><br>
-              &nbsp;&nbsp;・ <a href="@Context.GetLink(tags)">@tags.GetString("IndexTitle")</a></p>
-            }
-          }
+      @foreach (IDocument document in Outputs.Get("tech_archive.html").GetChildren())
+      {
+        @foreach (IDocument tags in document.GetChildren())
+        {
+          <p style="margin-top:-10px; margin-left:10px;"><span style="font-size:12px;">@tags.GetString("Date")</span><br>
+            &nbsp;&nbsp;・ <a href="@Context.GetLink(tags)">@tags.GetString("IndexTitle")</a></p>
+        }
+      }
 
-        <br>
+      <br>
 
+      <div class="adslot_1">
+
+        <p>Recommended</p>
+
+        <a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB0822GNY19"
+          rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
+          <img src="https://images-fe.ssl-images-amazon.com/images/I/51VMWnW1gOL._SL160_.jpg" alt=""
+            style="border: none;" />
+          <p style="font-size:14px;margin-top:-5px;">MP3デコーダ基板 3p</p>
+        </a>
+        <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt=""
+          width="1" height="1" style="border: 0px;" />
+        <br><br>
+
+        <a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB00WQWZXKW"
+          rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
+          <img src="https://images-fe.ssl-images-amazon.com/images/I/51NL-P4TrjL._SL160_.jpg" alt=""
+            style="border: none;" />
+          <p style="font-size:14px;margin-top:-5px;">マイクロサーボ SG92R 1p</p>
+        </a>
+        <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt=""
+          width="1" height="1" style="border: 0px;" />
+        <br><br>
+      </div>
+      <div class="stickyads">
         <div class="adslot_1">
-
-          @if(Document.Destination=="tech.html")
-          {
-          <p>Recommended</p>
-          <p><li style="margin-left:22px;">プログラミング</li></p>
-
-          　　<a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4822286533" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
-          <img src="https://images-fe.ssl-images-amazon.com/images/I/51KYAasOh6L._SL160_.jpg" alt="" style="border: none;" />
-          </a>
-          <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-          <br><br>
-
-          　　<a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB093Q13V96" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
-            <img src="https://images-fe.ssl-images-amazon.com/images/I/41TNqyMXGCL._SL160_.jpg" alt="" style="border: none;" />
-          </a>
-          <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-          <br><br>
-    
-          　　<a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4798110477" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
-            <img src="https://images-fe.ssl-images-amazon.com/images/I/51YCKF8AGNL._SL160_.jpg" alt="" style="border: none;" />
-          </a>
-          <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-          <br><br>
-
-          <p><li style="margin-left:22px;">プロマネ</li></p>
-          　　<a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4862806430" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
-          <img src="https://images-fe.ssl-images-amazon.com/images/I/51O5nWWBGJL._SL160_.jpg" alt="" style="border: none;" />
-          </a>
-          <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />    
-          <br><br>
-
-          　　<a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4872905245" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
-          <img src="https://images-fe.ssl-images-amazon.com/images/I/51X9JOAtTIL._SL160_.jpg" alt="" style="border: none;" />
-          </a>
-          <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-          <br><br>
-
-  　　        <a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB073TSJ8KL" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
-          <img src="https://images-fe.ssl-images-amazon.com/images/I/41Rlul9NEkL._SL160_.jpg" alt="" style="border: none;" />
-          </a>
-          <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-
-
-          <p><li style="margin-left:22px;">時間管理</li></p>
-          　　<a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4788907550" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
-          <img src="https://images-fe.ssl-images-amazon.com/images/I/41qglkQH2zL._SL160_.jpg" alt="" style="border: none;" />
-          </a>
-          <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />  
-          <br><br>
-          
-          　　<a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB00BG1CA96" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
-          <img src="https://images-fe.ssl-images-amazon.com/images/I/51ZwmxI9xhL._SL160_.jpg" alt="" style="border: none;" />
-          </a>
-          <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-          <br><br>
-
-          <p><li style="margin-left:22px;">マーケティング</li></p>
-          　　<a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB07P6XKQ14" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
-          <img src="https://images-fe.ssl-images-amazon.com/images/I/51rhY2nttBL._SL160_.jpg" alt="" style="border: none;" />
-          </a>
-          <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-          <br><br>
-
-
-          <p><li style="margin-left:22px;">ロジカルシンキング</li></p>
-  　　        <a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F453404562X" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
-          <img src="https://images-fe.ssl-images-amazon.com/images/I/41OiaeMSxaL._SL160_.jpg" alt="" style="border: none;" />
-          </a>
-          <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-          <br><br>
-
-  　　        <a href="//af.moshimo.com/af/c/click?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB01JADEKG2" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">
-          <img src="https://images-fe.ssl-images-amazon.com/images/I/51hrDQikhvL._SL160_.jpg" alt="" style="border: none;" />
-          </a>
-          <img src="//i.moshimo.com/af/i/impression?a_id=2991341&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-          <br><br>
-          }
 
           <p>Sponsor</p>
 
@@ -199,24 +151,12 @@
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2127299793131419"
             crossorigin="anonymous"></script>
           <!-- head -->
-          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2127299793131419"
+          <ins class="adsbygoogle" style="display:block;; margin-left:15px" data-ad-client="ca-pub-2127299793131419"
             data-ad-slot="2560895837" data-ad-format="vertical" data-full-width-responsive="true"></ins>
           <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
 
-          <br>
-          <br>
-
-          <script async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2127299793131419"
-            crossorigin="anonymous"></script>
-          <!-- head -->
-          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2127299793131419"
-            data-ad-slot="2560895837" data-ad-format="vertical" data-full-width-responsive="true"></ins>
-          <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
         </div>
       </div>
     </div>

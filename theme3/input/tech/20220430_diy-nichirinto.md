@@ -1,5 +1,5 @@
 Title: M5StickCを使ってダイソーの忍者刀を日輪刀に改造
-Date: 2022/4/30
+Date: 2022/04/30
 tag: M5StickC
 Image: /img/20220430_diy-nichirinto-index.png
 description: ダイソーに売っている忍者刀を改造して日輪刀にします

@@ -12,7 +12,7 @@ a{
   text-decoration:none;
   margin-left:10px;
   font-size:38px;	
-  font-family:'Noto Sans JP', sans-serif; 
+  font-family:'メイリオ', 'Meiryo', sans-serif; 
   color:dimgray; 
   background-color:rgba(255,255,255,0.5);
 }
@@ -30,7 +30,7 @@ a{
 }
 
 .body-font{
-  font-family:'Noto Sans JP', sans-serif;
+  font-family:'メイリオ', 'Meiryo', sans-serif;
   color:dimgray;
 }
 

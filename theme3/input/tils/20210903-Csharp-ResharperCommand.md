@@ -1,5 +1,5 @@
-Title: C# Resharperコマンドラインツールを使う
-Tag: Csharp/ツール
+Title: 「C#」Resharperコマンドラインツールを使う
+Tag: C#
 ---
 
 2021/09/03

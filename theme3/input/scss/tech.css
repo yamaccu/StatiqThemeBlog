@@ -1,7 +1,13 @@
-h2,h3{
+h2{
   background-color: whitesmoke;
   padding:10px;
   margin-top:50px;
+}
+
+h3{
+  background-color: whitesmoke;
+  padding:2px;
+  margin-top:30px;
 }
 
 a{
@@ -10,9 +16,9 @@ a{
 
 .title{
   text-decoration:none;
-  margin-left:10px;
+  margin-left:8px;
   font-size:38px;	
-  font-family:'Noto Sans JP', sans-serif; 
+  font-family:'メイリオ', 'Meiryo', sans-serif; 
   color:dimgray; 
   background-color:rgba(255,255,255,0.5);
 }
@@ -30,7 +36,7 @@ a{
 }
 
 .body-font{
-  font-family:'Noto Sans JP', sans-serif;
+  font-family: 'メイリオ', 'Meiryo', sans-serif;;
   color:dimgray;
 }
 
@@ -158,6 +164,14 @@ background: snow;
   color:#333;
   padding:0
 }
+
+.stickyads{
+  position:sticky;
+  top:10px;
+  max-width: 80%;
+}
+
+
 @media only screen and (max-width:479px) {
   .img-box div {
     min-height:80px

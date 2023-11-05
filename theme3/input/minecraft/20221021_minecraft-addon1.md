@@ -1,4 +1,4 @@
-Title: マイクラ統合版(BE) アドオンの作り方① 準備編
+Title: マイクラ統合版 アドオンの作り方① 準備編
 Date: 2022/10/21
 tag: addon
 Image: /img/20221021-minecraft-addon1-1.png

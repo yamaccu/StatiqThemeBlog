@@ -1,4 +1,4 @@
-title: RaspberryPiで動画をストリーミングする
+title: 「RaspberryPi」動画をストリーミングする
 tag: RaspberryPi
 Date: 2021/10/18
 description: RaspberryPiに"mjpg-streamer"を入れて動画をストリーミング配信します。

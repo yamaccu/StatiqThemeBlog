@@ -1,4 +1,4 @@
-Title: マイクラ統合版(BE) アドオンの作り方③ アニメーションコントローラでコマンド実行
+Title: マイクラ統合版 アドオンの作り方③ アニメーションコントローラでコマンド実行
 Date: 2022/10/27
 tag: addon
 Image: /img/20221027-minecraft-addon3-1.png
@@ -92,7 +92,7 @@ IndexTitle: アドオン作成③ アニコンでコマンド実行
 
 <br>
 
-<img src="../img/20221027-minecraft-addon3-4.png" style="width:100%; max-width:400px; margin-left:20px;" alt="アニコンののStateの説明の図">  
+<img src="../img/20221027-minecraft-addon3-4.png" style="width:100%; max-width:400px; margin-left:5px;" alt="アニコンののStateの説明の図">  
 
 <br>
 
@@ -172,7 +172,7 @@ attack stateに入ってon_entryの処理を実施したら、すぐdefault stat
 
 このようにして、stateと実行処理を作って、transitionsの条件で遷移させていくことでアニコンは動作します。  
 
-<img src="../img/20221027-minecraft-addon3-3.png" style="width:100%; max-width:400px; margin-left:20px;" alt="アニコンのtransitionsの説明の図">  
+<img src="../img/20221027-minecraft-addon3-3.png" style="width:100%; max-width:400px; margin-left:5px;" alt="アニコンのtransitionsの説明の図">  
 
 <br>
 

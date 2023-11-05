@@ -1,5 +1,5 @@
-title: node.jsでGitHub GraphQL APIを使う
-tag: github
+title: 「Node.js」GitHub GraphQL APIを使う
+tag: HTML/CSS/JS
 Date: 2022/12/29
 description: Githubの各種データをGraphQL APIで取得する方法をまとめました
 ---
@@ -9,10 +9,8 @@ description: Githubの各種データをGraphQL APIで取得する方法をま�
 
 ---
 
-GitHubにはREST APIとGraphQL APIの2つのAPIが準備されています。  
-APIがあるとブラウザ操作なしで、プログラミングでAPIを利用してデータを取ってこれるという利点があります。  
-
-本記事では、GraphQL APIの方の使い方についてまとめています。  
+GitHubには REST API と GraphQL API の2つのAPIが準備されています。  
+本記事では、 GraphQL API の方の使い方についてまとめています。  
 
 * GraphQL APIとは
 * GitHub GraphQL API エクスプローラ

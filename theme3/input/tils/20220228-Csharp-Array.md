@@ -1,5 +1,5 @@
-Title: C#の配列まとめ
-Tag: Csharp
+Title: 「C#」配列まとめ
+Tag: C#
 Date: 2022/2/28
 description: C#の配列の用法をまとめました
 ---

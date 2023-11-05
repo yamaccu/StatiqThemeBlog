@@ -1,9 +1,8 @@
-﻿Title: pythonの仮想環境の作り方
+﻿Title: 「python」仮想環境の作り方
 Tag: python
-RedirectFrom: posts/20210820-Python-pipenv
 ---
 
-2021/08/20
+2021/08/20　更新 2023/9/24
 
 # pythonでプログラミングする際の仮想環境の構築
 
@@ -44,18 +43,31 @@ pip install pipenv
 ### 3. 作業ディレクトリに移動して、必要なパッケージをpipenvコマンドでインストールします。  
 （pipfileという設定ファイルが作成され、ここに仮想環境の情報が入ります。）
 
-```C#
+```shell
 pipenv install xxxxxx
+```
+
+PCにインストールされているpythonのバージョンが最新でない場合、以下のエラーが出ることがあります。  
+その場合は、最初にpythonのバージョンを指定して環境構築するか、pythonを最新にバージョンアップしてください。  
+
+```C#
+# エラーログ
+Warning: Python 3.11 was not found on your system...
+Neither 'pyenv' nor 'asdf' could be found to install Python.
+
+# 以下でpythonのバージョンを指定してあげる
+pipenv install python 3.9.5
 ```
 
 インストールするパッケージが多い場合は、txtファイルでリストを作って、一気に読み込むこともできます。  
 requirementsというファイルを作り、中身を例えば以下のように作成します。  
 
-```C#
-xxxx==9.0.0
-xxxx==1.5.0
-xxxx==2.7.0
+```php
+packageA==9.0.0
+packageB==1.5.0
+packageC==2.7.0
 ```
+
 
 そして、下記のコマンドで一括インストールします。
 
@@ -77,6 +89,14 @@ exit
 ※仮想環境に入らずにコマンド実行もできます。
 ```C#
 pipenv run xxxxxx
+```
+
+### 6. 仮想環境の削除
+
+仮想環境を構築したフォルダで以下のコマンドを実行すると削除できます。  
+
+```C#
+pipenv --rm
 ```
 
 <br>

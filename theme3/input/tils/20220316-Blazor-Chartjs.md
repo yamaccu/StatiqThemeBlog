@@ -1,5 +1,5 @@
 Title: 「Blazor」Chart.jsでグラフを描く
-Tag: Csharp/Blazor
+Tag: Blazor
 Date: 2022/3/16
 description: Blazor上でChart.jsでグラフを描く方法をまとめました。
 ---

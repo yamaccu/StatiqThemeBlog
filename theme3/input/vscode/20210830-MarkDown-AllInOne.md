@@ -1,5 +1,7 @@
 Title: VSCodeの拡張機能「Markdown All in One」を使う
-Tag: MarkDown
+Tag: MarkDown All in One
+DestinationPath: tils/20210830-MarkDown-AllInOne.html
+IndexTitle: MarkDownの入力補佐
 ---
 
 2021/08/30
@@ -8,7 +10,17 @@ Tag: MarkDown
 
 ---
 
-VSCodeでMarkDownを書くのに、拡張機能「Markdown All in One」を導入すると便利です。
+VSCodeでMarkDownを書くのに、拡張機能「Markdown All in One」を導入すると便利です。  
+
+* ショートカット機能が充実しています。
+* ページ内の見出しを認識し、目次を作成してくれます。
+* リスト（箇条書きや番号付き）に行を追加したときに、次の行も自動でリストにしてくれます。
+* MarkDownのファイルをHTMLへ変換できます。
+* リンク作成が簡単にできます。
+
+<a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one" style="text-decoration: none;">
+<div class="link-box"><div class="img-box"><div style="background-image: url('https://yzhang.gallerycdn.vsassets.io/extensions/yzhang/markdown-all-in-one/3.5.1/1679819344347/Microsoft.VisualStudio.Services.Icons.Default');"></div></div><div class="text-box"><p class="title">Markdown All in One - Visual Studio Marketplace</p><p class="description">Extension for Visual Studio Code - All you need to write Markdown (keyboard shortcuts, table of contents, auto preview and more)</p></div></div>
+</a>
 
 Markdownの記法メモもまとめてみました。  
 <span class="link"></span>
@@ -67,7 +79,6 @@ Markdownの記法メモもまとめてみました。
 ## リストの入力補佐
 \- や1. などのリストを作成しているときに、行追加時に自動でリストが追加されます。  
 また、tabでインデントされます。  
-地味に便利なやつ。
 
 
 ## HTML出力
@@ -76,10 +87,11 @@ Ctr+Shift+p → Markdown All in One: Print current document to HTML
 
 
 ## リンクの作成
-HPなどのアドレスをコピーした状態で、テキストを選択してCtr+Vすると、リンクを自動作成してくれます。
+HPなどのアドレスをコピーした状態で、テキストを選択してCtr+Vすると、リンクが作成されます。
 
 <img src="../img/20210830-MarkDown-AllInOne-4.png" Style="width:100%;max-width:350px;" alt="MarkDownAllInOneリンク作成">  
 
+<br>
 <br>
 
 以上です。

@@ -1,5 +1,5 @@
-Title: C#のToStringまとめ
-Tag: Csharp
+Title: 「C#」ToStringまとめ
+Tag: C#
 Date: 2022/5/30
 description: C#のToStringの用法をまとめました
 ---

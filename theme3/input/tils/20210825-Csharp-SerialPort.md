@@ -1,5 +1,5 @@
-Title: C# WPFでシリアル通信する
-Tag: Csharp/WPF
+Title: 「C#/WPF」シリアル通信を行う
+Tag: C#/WPF
 ---
 
 2021/08/25

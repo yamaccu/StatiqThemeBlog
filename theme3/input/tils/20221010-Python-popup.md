@@ -197,7 +197,8 @@ tk = tkinter
 tk.Tk().withdraw()
 
 type = [('テキストファイル','*.txt')] 
-path = tk.filedialog.askopenfilename(filetypes = type)
+path = tk.filedialog.askopenfilename(filetypes = type)  #単一選択のみ
+path = tk.filedialog.askopenfilenames(filetypes = type)  #複数選択可
 
 pathdirectory = tk.filedialog.askdirectory()
 ```

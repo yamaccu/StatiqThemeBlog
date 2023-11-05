@@ -2,6 +2,7 @@ title: TECH BLOG
 layout: _tech_layout.cshtml
 ---
 
+<br>
 @foreach(IDocument document in Outputs.Get("tech_archive.html").GetChildren())
 {
   @foreach (IDocument posts in document.GetChildren())
@@ -13,7 +14,7 @@ layout: _tech_layout.cshtml
           </div>
           <div style="height:150px;color:dimgray;margin-left:5px;">
               <p style="color:darkgray; position:relative; margin-top:-1px;">@posts.GetString("Date")</p>
-              <p style="font-weight:bold;">【@posts.GetString("Title")】</p>
+              <p style="font-weight:bold;margin-top:-15px">【@posts.GetString("Title")】</p>
               <p>&nbsp;&nbsp;@posts.GetString("description")</p>
           </div>
         </div>

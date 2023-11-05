@@ -1,4 +1,4 @@
-Title: pythonでファイルを日付によって操作する。
+Title: 「python」ファイルを日付によって操作する。
 Tag: python
 Date: 2022/3/22
 description: pythonでフォルダ内のファイルを日付によって操作する方法をまとめました

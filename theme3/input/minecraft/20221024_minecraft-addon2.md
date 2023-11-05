@@ -1,4 +1,4 @@
-Title: マイクラ統合版(BE) アドオンの作り方② プレイヤー強化
+Title: マイクラ統合版 アドオンの作り方② プレイヤー強化
 Date: 2022/10/24
 tag: addon
 Image: /img/20221024-minecraft-addon2-2.png

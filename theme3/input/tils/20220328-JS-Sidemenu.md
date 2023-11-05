@@ -1,6 +1,6 @@
 title: 「JavaScript」サイドメニューの表示/非表示
 Date: 2022/3/28
-Tag: HTML/CSS/JS
+tag: HTML/CSS/JS
 description: webサイトで、サイドメニューを表示したり非表示にしたりする方法とまとめました。
 ---
 

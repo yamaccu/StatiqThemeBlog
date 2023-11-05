@@ -1,5 +1,5 @@
 Title: ｽﾀｯｸﾁｬﾝを作ってみた
-Date: 2022/9/9
+Date: 2022/09/09
 tag: M5Stack
 Image: /img/20220910-stackchan-HW.png
 description: 手乗りサイズのロボット「ｽﾀｯｸﾁｬﾝ」を作ってみました。
@@ -73,20 +73,22 @@ twitterで <span class="link"></span>[#ｽﾀｯｸﾁｬﾝ](https://twitter.co
 
 ## ハードウェア部分の作り方
 
-本ページでは以下の方法で作っています。  
-（ちょっと特殊で、参考にならない気もします。）
+ハードの主な作り方は2通りあるかと思います。
+
+1. ｽﾀｯｸﾁｬﾝの[github](https://github.com/meganetaaan/stack-chan)から設計情報を入手して、基板発注、部材集め、3Dプリントなど自分で作る
+2. 有志の方のキット販売を利用する
+
+<a href="https://mongonta.booth.pm/" style="text-decoration: none;">
+<div class="link-box"><div class="img-box"><div style="background-image: url('https://booth.pximg.net/c/620x620/8d274102-a3dc-4d1c-ae0d-f2872c2a826d/i/3840834/585b8780-46eb-411f-87bb-37b16d306044_base_resized.jpg');"></div></div><div class="text-box"><p class="title">Arpeggio Factory - BOOTH</p><p class="description">ｽﾀｯｸﾁｬﾝの組み立てキットや電子部品を展開しています。 ご不明な点がございましたらお気軽にお問い合わせください。 </p></div></div>
+</a>
+
+本ページでは1でも2でもなくて、以下の方法で作っています。  
+※ちょっと特殊で、参考にならない気もします。
 
 * ケース：近所のワーキングスペースの3Dプリンタでプリント  
 * 基板：ユニバーサル基板を良いサイズに切り出して、部品をはんだ付け
 
 <br>
-
-ちなみに、有志の方のキット販売もありますので、そちらの方が簡単かもしれません。  
-以下にリンクを貼っておきます。  
-
-<a href="https://mongonta.booth.pm/" style="text-decoration: none;">
-<div class="link-box"><div class="img-box"><div style="background-image: url('https://booth.pximg.net/c/620x620/8d274102-a3dc-4d1c-ae0d-f2872c2a826d/i/3840834/585b8780-46eb-411f-87bb-37b16d306044_base_resized.jpg');"></div></div><div class="text-box"><p class="title">Arpeggio Factory - BOOTH</p><p class="description">ｽﾀｯｸﾁｬﾝの組み立てキットや電子部品を展開しています。 ご不明な点がございましたらお気軽にお問い合わせください。 </p></div></div>
-</a>
 
 
 ### 材料
@@ -141,23 +143,10 @@ twitterで <span class="link"></span>[#ｽﾀｯｸﾁｬﾝ](https://twitter.co
 
 ユニバーサル基板をケースに入るサイズで切り出して、部品を回路通りにはんだ付けします。  
 結構大変です。  
+（プリント基板発注した方がよかったと今では思っています。）  
 回路図は <span class="link"></span>[こちら。](https://github.com/meganetaaan/stack-chan/tree/main/schematics)  
 
-下記の画像では、回路図に追加で、ノイズ対策のためGPIO26にD級アンプとスピーカーを接続しております。  
-
-| 材料 | 購入先 | リンク |
-| --- | --- | --- |
-| スピーカー | 秋月電子など | 　<a href="https://akizukidenshi.com/catalog/g/gP-12494/" target="_blank" class="link"></a> |
-| D級アンプ | 秋月電子など | 　<a href="https://akizukidenshi.com/catalog/g/gK-08217/" target="_blank" class="link"></a> |
-
-
-
-
-
-<div style="display:flex; flex-wrap:wrap">
-<img src="../img/20220910-stackchan-3.png" Style="max-width:250px;margin-left:10px;margin-top:10px;" alt="スタックチャン基板の画像2">
 <img src="../img/20220910-stackchan-4.png" Style="max-width:250px;margin-left:10px;margin-top:10px;" alt="スタックチャン基板の画像3">
-</div>
 
 <br>
 
@@ -174,7 +163,7 @@ twitterで <span class="link"></span>[#ｽﾀｯｸﾁｬﾝ](https://twitter.co
 </a>
 
 ちなみに、オリジナルのｽﾀｯｸﾁｬﾝはModdableというJavaScriptで組み込みプログラミングができるツールで作成されています。  
-
+こちらも[github](https://github.com/meganetaaan/stack-chan)にあがっています。  
 
 ### しゃべる
 

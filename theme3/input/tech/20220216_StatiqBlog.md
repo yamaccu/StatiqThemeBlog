@@ -1,5 +1,5 @@
 Title: C#製の静的サイトジェネレータ「Statiq」でブログ作成
-Date: 2022/2/16
+Date: 2022/02/16
 tag: statiq
 Image: /img/20220216_statiqblog-index.png
 description: C#製の静的サイトジェネレータ "Statiq" と "github pages" を使ってブログ作成します。
